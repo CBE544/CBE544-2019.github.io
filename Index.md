@@ -12,16 +12,16 @@ We will be using the [Atomic Simulation Environment (ASE)](https://wiki.fysik.dt
 
 ### HomeWork 5 ###
 * 4% of final grade (Note: the five homework problems contribute to a total of 20% of final grade)
-* <font color="red"> Due Friday March 24 @ 5:00PM </font>
-* [Problem Description](HW5.pdf)
+* <font color="red"> Due Friday March TBD </font>
+* Problem Description
   
 ### Final Project ###
 * 60% of final grade 
-* <font color="red">Due Monday May 1 5:00PM</font>
-* [Project Description and Requirements](Project/) 
+* <font color="red">Due TBD</font>
+* Project Description and Requirements
 <!---* [Project Description and Requirements]() --->
 <!---* [Project Assignments]()--->
-* [Project Assignments](Project_Assignments/)
+* Project Assignments(
 
 
 ## Guides ##
