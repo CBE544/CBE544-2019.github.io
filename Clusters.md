@@ -90,10 +90,24 @@ ____
 
 ### First Time Logging in ###
 
-For the **first login** only, run the following command:
+For the **first login** only, add the following line to your .bashrc script command:
+
+``` bash
+source /scratch/alevoj1/Scripts/group_bashrc
+````
+In order to do this you must use a text editor in the terminal. VIM and Nano are two popular text editors. Introductions to both of these are on the fron page of the group website. So do either:
 
 ```bash
-cp /home1/03672/tg829713/vojgroup/bash_script/bashrc_copy ~/.bashrc 
+vi ~/.bashrc
+```
+OR
+```bash
+nano ~/.bashrc
+```
+
+and paste the source line there. Once that is done exit the text editor and run this command in the terminal.
+
+```bash
 source ~/.bashrc
 ```
 
@@ -111,7 +125,7 @@ Do all of your work in the directory you have called CBE544.
 For example, Create a folder `hw5` under `CBE544` and perform all calculations of HW5 in `hw5`. If you have already started you jobs somewhere else, you can copy the entire folder to CBE544 once you have done all calculations (e.g. `cp -r folderpath ~/work/CBE544/hw5`).  However, you need to complete this step before sending us the report of HW5, and please include the path of `CBE544` folder in your report or email. You can obtain the path by 
 
 ```bash
-cdw
+cd
 cd CBE544
 pwd
 ```
