@@ -13,7 +13,7 @@ ____
 
 ## Logging Into the Computing Clusters
 
-Once you account on Stampede has been activated. Follow the instructions and tests to make sure everything is set up properly and functional.
+Once you account on Chestnut has been activated. Follow the instructions and tests to make sure everything is set up properly and functional.
 
 ## Contents
 1. [Installation](#installation)
@@ -54,9 +54,7 @@ ____
 
 ## Logging onto the Clusters
 
-For the [**Stampede**](https://www.tacc.utexas.edu/stampede/) cluster, make sure to read through the User Guide [here](https://portal.tacc.utexas.edu/user-guides/stampede).
-
-login with your Stampede username (most probably start with ```tgxxxxxx```, check your account [here](https://www.xsede.org/group/xup/accounts))and password (you will aslo be asked for Mulit-factor Authorization).
+Your chestnut username will be your username of logging into Penn systems.
 
 Follow the instructions below for your system:
 
@@ -65,7 +63,7 @@ Follow the instructions below for your system:
 Open "Applications-> Utilities -> Terminal" or "Command+Space" to search Terminal using "spotlight search"
 In a terminal:
 ```bash
-ssh -X username@stampede.tacc.utexas.edu
+ssh -X username@chestnut-login.seas.upenn.edu
 ```
 
 ### Windows 
@@ -73,7 +71,7 @@ Launch Xming. You will always need to have this open in order to forward graphic
 
 Start PuTTY, and:
 
-* “Session” → “Host Name” `username@stampede.tacc.utexas.edu` for **Stampede**
+* “Session” → “Host Name” `username@chesetnut-login.seas.upenn.edu` for Chestnut
 * “Connection” → “SSH” → “X11” check “Enable X11 forwarding”
 * Back in “Session”, you can **save these settings for next time**.
 
@@ -84,7 +82,7 @@ You can start putty several times, if you need several terminal windows; only on
 
 In a terminal:
 ```bash
-ssh -X username@stampede.tacc.utexas.edu
+ssh -X username@chestnut-login.seas.upenn.edu
 ```
 ____
 
@@ -99,27 +97,17 @@ cp /home1/03672/tg829713/vojgroup/bash_script/bashrc_copy ~/.bashrc
 source ~/.bashrc
 ```
 
-This will enable you to run specific software on the Stampede cluster, including the ASE interface to Quantum ESPRESSO.
-
-There are two file partitions, the `home` and the `work` partition. Go ahead and make a symbolic link to the `work` partition using:
-
-```bash
-ln -s $WORK work
-```
-
 **Change the permission of files:**
 
 ```bash
 cd
 cd work
 mkdir CBE544
-chmod g+X $WORK
-chgrp -R G-818582 CBE544
-chmod g+s CBE544
-chmod g+rX CBE544
+chmod g+r ./
 ```
 
-**Perform all your calculations from the work/CBE544**
+Do all of your work in the directory you have called CBE544.
+
 
 For example, Create a folder `hw5` under `CBE544` and perform all calculations of HW5 in `hw5`. If you have already started you jobs somewhere else, you can copy the entire folder to CBE544 once you have done all calculations (e.g. `cp -r folderpath ~/work/CBE544/hw5`).  However, you need to complete this step before sending us the report of HW5, and please include the path of `CBE544` folder in your report or email. You can obtain the path by 
 
