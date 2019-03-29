@@ -71,7 +71,7 @@ Launch Xming. You will always need to have this open in order to forward graphic
 
 Start PuTTY, and:
 
-* “Session” → “Host Name” `username@chesetnut-login.seas.upenn.edu` for Chestnut
+* “Session” → “Host Name” `username@chestnut-login.seas.upenn.edu` for Chestnut
 * “Connection” → “SSH” → “X11” check “Enable X11 forwarding”
 * Back in “Session”, you can **save these settings for next time**.
 
