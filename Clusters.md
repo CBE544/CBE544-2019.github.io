@@ -90,7 +90,7 @@ ____
 
 ### First Time Logging in ###
 
-For the **first login** only, add the following line to your .bashrc script command:
+For the **first login** only, add the following line to your ~/.bashrc script command:
 
 ``` bash
 source /scratch/alevoj1/Scripts/group_bashrc
