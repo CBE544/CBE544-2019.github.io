@@ -33,7 +33,7 @@ To start this tutorial and the exercises that follow, log on to Chestnut and dow
 ```bash
 wget https://cbe544.github.io/CBE544-2019.github.io/ASE/HW.tar.gz
 tar -zxvf HW.tar.gz
-cd HW
+cd HW5
 ```
 
 There are two files that are necessary to run jobs on the Chestnut cluster. The first is `vasp-ase.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
@@ -180,7 +180,24 @@ Next, we will determine how well-converged the total energy is with respect to t
 **HW 5:** Show the k-point convergence plot, your pick for the k-points, and your rationale.
 
 #### Optimization ####
-Finally, you will be performing a geometry optimization on the (001) BO2-terminated surface of SrTiO<sub>3</sub>. To proceed with this exercise, first take a look at the starting structure `LiCoO2-104.traj` in the `relax` folder by using the GUI. You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom two layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. 
+Finally, you will be performing a geometry optimization on the (001) BO2-terminated surface of SrTiO<sub>3</sub>. To proceed with this exercise, first take a look at the starting structure `LiCoO2-104.traj` in the `relax` folder by using the GUI. You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom three layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. 
+
+To check on the calculation while it is running use either 
+
+```bash
+more out.XXXXXX
+````
+or 
+```bash
+less out.XXXXX
+```
+Once the calculation is completed and you have recieved an email go to the relax directory. The final energy will be printed in the last line of the out.XXXXX file. To see this line use the command `tail out.XXXXX`. You should see something like this:
+
+```bash
+Energy = -514.7679737
+max_forces = 0.015439
+```
+Please be sure that the force is below the criteria set. The Energy list is the Eergy of the system.
 
 **HW 5:** Report the converged energy of the optimized structure. 
 
