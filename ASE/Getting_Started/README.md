@@ -157,11 +157,8 @@ Remember to change the script name to lattice-constant-a.py in the `vasp-ase.sub
 sbatch vasp-ase.sub
 ```
 
-To proceed with writing this script, you will be modifying the example script provided here: [ASE-Equation of State](https://wiki.fysik.dtu.dk/ase/tutorials/eos/eos.html). Note that the sample script reads 5 configurations from the trajectory, but we have 7 in our calculations. This will plot the volumes vs energies and print the volume that related to the minimum energy. 
+To proceed with writing this script, you will be modifying the example script provided here: [ASE-Equation of State](https://wiki.fysik.dtu.dk/ase/tutorials/eos/eos.html). Note that the sample script reads 5 configurations from the trajectory, but we have 7 in our calculations.  
 
-To get the a lattice constant take this volume and use this equation:
-
-a_DFT = 2*Volume /[(4.71)*sqrt(3)]
 
 This script can be run on the login node directly. To execute the script you have written, use the command:
 
@@ -169,8 +166,10 @@ This script can be run on the login node directly. To execute the script you hav
 python EOS-script.py
 ```
 
+This will plot the volumes vs energies and print the volume that related to the minimum energy. The output plot (xyz.png) should show the fitted energies as a function of the volume, with the volume corresponding to the minimum and the bulk modulus displayed on the top. To get the a lattice constant take this volume and use this equation:
 
-The output plot (xyz.png) should show the fitted energies as a function of the a lattice constant, with the lattice constant corresponding to the minimum and the bulk modulus displayed on the top. 
+a_<sub>DFT</sub> = \frac{2*Volume}{(4.71)*sqrt(3)}
+
 
 **HW 5:** Plot the energies as listed above, and report the DFT lattice constant.
 
