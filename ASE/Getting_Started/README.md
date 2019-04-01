@@ -168,10 +168,13 @@ python EOS-script.py
 
 This will plot the volumes vs energies and print the volume that related to the minimum energy. The output plot (xyz.png) should show the fitted energies as a function of the volume, with the volume corresponding to the minimum and the bulk modulus displayed on the top. To get the a lattice constant take this volume and use this equation:
 
-a_<sub>DFT</sub> = {2*Volume}/{(4.71)*sqrt(3)}
+a<sub>DFT</sub> = {2*Volume}/{(4.71)*sqrt(3)}
 
+Repeat this process with the c lattice constant by going to the /lattice/c directory and running the script there. The process for the EOS will be the same but to get the c lattice constant you must use this formula.
 
-**HW 5:** Plot the energies as listed above, and report the DFT lattice constant.
+c<sub>DFT</sub> = sqrt((Volume/6.959)^2+1.4175^2+0.818^2
+
+**HW 5:** Plot the energies as listed above, and report the DFT lattice constants.
 
 The two-dimensional bulk modulus B describes the compressibility of a two-dimensional sheet (how difficult it is to stretch or compress). Take the lattice script given before, change the given value to the DFT lattice constant, and change the strain value to run from 0.98 to 1.02, with five steps of 0.1. Fit the energies with a quadratic function. Then, calculuate B via:
 
