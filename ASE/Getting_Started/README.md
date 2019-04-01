@@ -80,7 +80,7 @@ An existing trajectory can be read in:
 slab = read('LiCoO2.traj')
 ```
 
-Then, the VASP calculator is set up. All parameters related to the electronic structure calculation are included here. The following example shows typical parameters that we use in the group for MXene calculations.
+Then, the VASP calculator is set up. All parameters related to the electronic structure calculation are included here. The following example shows typical parameters that we use in the group for LiCo<sub>2</sub> calculations.
 
 ```python
 calc = Vasp(prec='normal',	#scf accuracy
@@ -137,6 +137,8 @@ sbatch vasp-ase.sub
 
 Find the [`lattice-constant-a.py`](Lattice_Constant.py) script in the `lattice/a` folder. This script calculates the different energies of the system as a function of the lattice constant. Before you run this job, make sure you read the comments within to understand what it does.
 
+The following lines have been added the the beginning of the script to vary to lattice size of the bulk LiCoO<sub>2</sub>. LiCoO<sub>2</sub> is symmetric in two directions therefore our a and b lattice constants are going to the same and both mus tbe changed at the same time. However the c lattice vector can be studied independent of a and b. In addition the unit cell is created on an angle. This can be seen in the b and c initial lattice parameters. 
+
 ```python
 eps=0.03
 a0=2.835
@@ -155,8 +157,20 @@ Remember to change the script name to lattice-constant-a.py in the `vasp-ase.sub
 sbatch vasp-ase.sub
 ```
 
-To proceed with writing this script, you will be modifying the example script provided here: [ASE-Equation of State](https://wiki.fysik.dtu.dk/ase/tutorials/eos/eos.html). Note that the sample script reads 5 configurations from the trajectory, but we have more configurations than that in our calculations. This script can be run on the login node directly. To execute the script you have written, use the command:
+To proceed with writing this script, you will be modifying the example script provided here: [ASE-Equation of State](https://wiki.fysik.dtu.dk/ase/tutorials/eos/eos.html). Note that the sample script reads 5 configurations from the trajectory, but we have 7 in our calculations. This will plot the volumes vs energies and print the volume that related to the minimum energy. 
 
+To get the a lattice constant take this volume and use this equation:
+
+a_DFT = 2*Volume /[(4.71)*sqrt(3)]
+
+This script can be run on the login node directly. To execute the script you have written, use the command:
+
+```python
+python EOS-script.py
+```
+
+
+The output plot (xyz.png) should show the fitted energies as a function of the a lattice constant, with the lattice constant corresponding to the minimum and the bulk modulus displayed on the top. 
 
 **HW 5:** Plot the energies as listed above, and report the DFT lattice constant.
 
