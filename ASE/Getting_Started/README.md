@@ -166,7 +166,7 @@ a<sub>DFT</sub> = {2*Volume}/{(4.71)*sqrt(3)}
 
 Repeat this process with the c lattice constant by going to the lattice/c directory and running the script there. The process for the EOS will be the same but to get the c lattice constant you must use this formula.
 
-c<sub>DFT</sub> = sqrt[(Volume/6.959)<sup>2</sup>+1.4175<sup>2</sup>+0.818^<sup>2</sup>]
+c<sub>DFT</sub> = sqrt[(Volume/6.959)<sup>2</sup>+1.4175<sup>2</sup>+0.818<sup>2</sup>]
 
 **HW 5:** Show your Python scripts for the EOS, Plot the Equation of State fits, and report the DFT lattice constants.
 
