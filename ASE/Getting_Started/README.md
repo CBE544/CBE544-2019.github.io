@@ -30,7 +30,7 @@ ASE scripts can be run directly in the terminal (in the login node) or submittin
 
 To start this tutorial and the exercises that follow, log on to Chestnut and download the following:
 ```bash
-wget https://cbe544.github.io/CBE544-2019.github.io/ASE/HW.tar.gz
+wget https://cbe544.github.io/CBE544-2019.github.io/HW.tar.gz
 tar -zxvf HW.tar.gz
 cd HW5
 ```
