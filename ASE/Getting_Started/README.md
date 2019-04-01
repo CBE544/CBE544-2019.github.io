@@ -62,43 +62,61 @@ python script-name.py   #name of script to run
 Finally, the last line ```python script-name.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running. We will be using this script later in this section for performing calculations to compute the lattice constant of bulk LiCoO<sub>2</sub>.
 
 
-Let's look at how a typical ASE script is written. Open the [`Energy.py`](energy.py) script. We import all the relevant ASE modules in for this calculation
+Let's look at how a typical ASE script is written. Open the [`relax.py`](energy.py) script. We import all the relevant ASE modules in for this calculation
 
 ```python
-from espresso import espresso
-from ase.io import read, write
+from ase import Atoms, Atom
+from ase.calculators.vasp import Vasp
+from ase.io import read,write
+import numpy as np
 ```
 
-`from espresso import espresso` imports the Quantum ESPRESSO calculator for the ASE interface, and `from ase.io import read, write` imports the read and write commands for trajectory files.
+`from ase.calculators import Vasp` imports the VASP calculator for the ASE interface, and `from ase.io import read, write` imports the read and write commands for trajectory files.
 
 An existing trajectory can be read in:
 
 ```python
 # read in the slab
-slab = read('Ti2C.traj')
+slab = read('LiCoO2.traj')
 ```
 
-Then, the Quantum ESPRESSO calculator is set up. All parameters related to the electronic structure calculation are included here. The following example shows typical parameters that we use in the group for MXene calculations.
+Then, the VASP calculator is set up. All parameters related to the electronic structure calculation are included here. The following example shows typical parameters that we use in the group for MXene calculations.
 
 ```python
-calc = espresso(pw=700,             #plane-wave cutoff
-                dw=7000,                    #density cutoff
-                xc='BEEF-vdW',          #exchange-correlation functional
-                kpts=(8,8,1),   #k-point sampling;
-                nbands=-20,             #20 extra bands besides the bands needed to hold
-                #the valence electrons
-                sigma=0.1,
-                convergence= {'energy':1e-6,
-                'mixing':0.1,
-                'nmix':10,
-                'mix':4,
-                'maxsteps':500,
-                'diag':'david'
-                },	#convergence parameters
-                output={'removesave':True},
-                dipole={'status':False}, #dipole correction to account for periodicity in z
-                spinpol=False,
-                outdir='calcdir')	#output directory for Quantum Espresso files
+calc = Vasp(prec='normal',	#scf accuracy
+            encut=520,		#plane-wave cutoff
+            xc='PBE',		#functional
+            lreal='Auto',	#sampling space
+            kpts=[4,4,1],	#kpoint sampling
+            nsw = 99,		#max number of ionic steps
+            ibrion = 2,		#ion iteration steps
+            ispin = 2,		#spin polarized
+            amix_mag = 0.800000,#mixing parameters
+            bmix = 0.000100,
+            bmix_mag= 0.000100,
+            amix = 0.20000,
+            sigma = 0.05000,	#smearing
+            ediff = 2.00e-04,	#energy difference for scf convergence
+            ediffg = -2.00e-02,	#force  cutoff for overall convergence
+            algo ='fast',
+            ismear = -5,	#smearing type
+            nelm = 250,		#max number of electronic steps
+            ncore = 16,
+            lasph= True,
+            ldautype = 2,	#Use Hubbard U
+            lmaxmix = 4,
+            lorbit = 11,
+            ldau = True,
+            ldauprint = 2,
+            ldau_luj={'Co':{'L':2, 'U':3.32, 'J':0},
+                      'Li':{'L':-1, 'U':0.0, 'J':0.0},
+                      'O':{'L':-1, 'U':0.0, 'J':0.0}
+                      },
+            lvtot = False,
+            lwave = False,
+            lcharg = False,
+	    gamma=True,		#center at gamma point
+)
 
 ```
 
