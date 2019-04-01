@@ -143,7 +143,7 @@ b=[a0/2,(a0/2)*np.sqrt(3),0]
 c=[a0/2,a0/(2*np.sqrt(3)),c0]
 for X in np.linspace(1-eps,1+eps,7):
 	p=read('init.traj')
- 	p.set_cell([[X*a[0],X*a[1],X*a[2]],[X*b[0],X*b[1],X*b[2]],[c[0],X*c[1],X*c[2]]],scale_atoms=True)
+ 	p.set_cell([[i*X for i in a],[j*X for j in b],c],scale_atoms=True)
 ```
 
 Remember to change the script name to lattice-constant-a.py in the `vasp-ase.sub` file! Submit the script by running:
