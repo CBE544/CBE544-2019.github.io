@@ -29,11 +29,11 @@ In the first exercise, we will be studying lithium cobalt and how to determine t
 
 ASE scripts can be run directly in the terminal (in the login node) or submitting to external nodes. Generally, you will be submitting jobs to external nodes and only small scripts will be run on the login node. By default, all output from any submitted script will be written *from the directory where the submission command was executed*, so make sure you are inside the calculation folder before running the submission command.
 
-To start this tutorial and the exercises that follow, log on to Stampede2 and download the following:
+To start this tutorial and the exercises that follow, log on to Chestnut and download the following:
 ```bash
-wget https://cbe544.github.io/CBE544-2018.github.io/ASE/HW5.tar.gz
-tar -zxvf HW5.tar.gz
-cd HW5
+wget https://cbe544.github.io/CBE544-2019.github.io/ASE/HW.tar.gz
+tar -zxvf HW.tar.gz
+cd HW
 ```
 
 There are two files that are necessary to run jobs on the Chestnut cluster. The first is `vasp-ase.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
