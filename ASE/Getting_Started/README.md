@@ -80,7 +80,7 @@ An existing trajectory can be read in:
 slab = read('LiCoO2.traj')
 ```
 
-Then, the VASP calculator is set up. All parameters related to the electronic structure calculation are included here. The following example shows typical parameters that we use in the group for LiCo<sub>2</sub> calculations.
+Then, the VASP calculator is set up. All parameters related to the electronic structure calculation are included here. The following example shows typical parameters that we use in the group for LiCoO<sub>2</sub> calculations.
 
 ```python
 calc = Vasp(prec='normal',	#scf accuracy
@@ -117,7 +117,6 @@ calc = Vasp(prec='normal',	#scf accuracy
             lcharg = False,
 	    gamma=True,		#center at gamma point
 )
-
 ```
 
 Finally, the VASP calculator is attached to the `slab` Atoms object, the energy calculation is ran, and the total energy of the system is output in the log file (defined in the `spede_esp.sub` file above). 
@@ -126,10 +125,7 @@ Once the scripts and atoms object is set up you can submit a job, using:
 
 ```bash
 sbatch vasp-ase.sub
-
 ```
-
-<a name='mxenes'></a>
 
 <a name='lattice-constant-determination'></a>
 
@@ -172,33 +168,19 @@ a<sub>DFT</sub> = {2*Volume}/{(4.71)*sqrt(3)}
 
 Repeat this process with the c lattice constant by going to the /lattice/c directory and running the script there. The process for the EOS will be the same but to get the c lattice constant you must use this formula.
 
-c<sub>DFT</sub> = sqrt((Volume/6.959)^2+1.4175^2+0.818^2
+c<sub>DFT</sub> = sqrt((Volume/6.959)^2+1.4175^2+0.818^2)
 
-**HW 5:** Plot the energies as listed above, and report the DFT lattice constants.
-
-The two-dimensional bulk modulus B describes the compressibility of a two-dimensional sheet (how difficult it is to stretch or compress). Take the lattice script given before, change the given value to the DFT lattice constant, and change the strain value to run from 0.98 to 1.02, with five steps of 0.1. Fit the energies with a quadratic function. Then, calculuate B via:
-
-$$B=S_{0}\frac{d^{2}E}{dS^{2}}$$
-
-where S is the surface area of the sheet (a variable) and S<sub>0</sub> is the true surface area. Note that in this case we are fitting the surface area S, _not_ the lattice constant! The surface area of the MXenes is given by:
-
-$$S=\frac{\sqrt{3}}{2}a^{2}$$
-
-**HW 5:** Report the two-dimensional bulk modulus of Ti<sub>2</sub>C.
+**HW 5:** Show your Python scripts for the EOS, Plot the Equation of State fits, and report the DFT lattice constants.
 
 <a name='convergence-with-k-points'></a>
 
 #### Convergence with k-Points ####
-Next, we will determine how well-converged the total energy is with respect to the number of k-points in each direction. Modify the [`Lattice_Constant.py`](Lattice_Constant.py) script using the lattice parameter obtained from the previous section. Instead of looping over strain values as above, modify the script to keep the same lattice constant and loop over k-points instead. Try using k = (2,2,1), (4,4,1), (6,6,1), (8,8,1), and (10,10,1), and plot the energy as a function of k-points. Pick one and try to justify why it would be a reasonable choice. The relevant k-points will usually be known, since we have consistent settings that we use throughout the group. In principle, one should always check for convergence when working with a new system. (Side note: Think about why the last k-point is always 1).
+Next, we will determine how well-converged the total energy is with respect to the number of k-points in each direction. You will be running the kptconv.py script in the k-points folder. Look through the script to understand what its doing. Run this script by submitting a job to an external node as discussed previously. Remember to change the name of the script to execute, in the spede_esp.sub file. Upon completion, the script outputs a convergence plot and prints the total energies as a function of the k-points used in the calculation.
 
 **HW 5:** Show the k-point convergence plot, your pick for the k-points, and your rationale.
 
-For the Final Project, we will be using (8x8x1) k-points for the (1x1) MXene surfaces, and (4x4x1) k-points for the (2x2) MXene surfaces.
+#### Optimization ####
+Finally, you will be performing a geometry optimization on the (001) BO2-terminated surface of SrTiO<sub>3</sub>. To proceed with this exercise, first take a look at the starting structure `LiCoO2-104.traj` in the `relax` folder by using the GUI. You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom two layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. 
 
-We have also provided the `Lattice_Resize.py` script that reads in a .traj file, and changes the lattice to the correct version resized with the lattice constant provided. In the script, you need to change the lattice constant you want manually. Unlike the rest of the scripts given to you, this script can be run directly from the command line, without using the submission system, by using:
+**HW 5:** Report the converged energy of the optimized structure. 
 
-```bash
-python Lattice_Resize.py
-```
-
-**Next**: move on to [Adsorption](../Adsorption/) to learn about how to add adsorbates on your surface.
