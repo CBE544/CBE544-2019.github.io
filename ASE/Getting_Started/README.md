@@ -154,18 +154,17 @@ sbatch vasp-ase.sub
 
 To proceed with writing this script, you will be modifying the example script provided here: [ASE-Equation of State](https://wiki.fysik.dtu.dk/ase/tutorials/eos/eos.html). Note that the sample script reads 5 configurations from the trajectory, but we have 7 in our calculations.  
 
-
 This script can be run on the login node directly. To execute the script you have written, use the command:
 
 ```python
 python EOS-script.py
 ```
 
-This will plot the volumes vs energies and print the volume that related to the minimum energy. The output plot (xyz.png) should show the fitted energies as a function of the volume, with the volume corresponding to the minimum and the bulk modulus displayed on the top. To get the a lattice constant take this volume and use this equation:
+This will plot the volumes vs energies and print the volume that related to the minimum energy. The output plot (EOS.png) should show the fitted energies as a function of the volume, with the volume corresponding to the minimum and the bulk modulus displayed on the top. To get the a<sub>DFT</sub> lattice constant take this volume and use this equation:
 
 a<sub>DFT</sub> = {2*Volume}/{(4.71)*sqrt(3)}
 
-Repeat this process with the c lattice constant by going to the /lattice/c directory and running the script there. The process for the EOS will be the same but to get the c lattice constant you must use this formula.
+Repeat this process with the c lattice constant by going to the lattice/c directory and running the script there. The process for the EOS will be the same but to get the c lattice constant you must use this formula.
 
 c<sub>DFT</sub> = sqrt((Volume/6.959)^2+1.4175^2+0.818^2)
 
@@ -179,7 +178,7 @@ Next, we will determine how well-converged the total energy is with respect to t
 **HW 5:** Show the k-point convergence plot, your pick for the k-points, and your rationale.
 
 #### Optimization ####
-Finally, you will be performing a geometry optimization on the (001) BO2-terminated surface of SrTiO<sub>3</sub>. To proceed with this exercise, first take a look at the starting structure `LiCoO2-104.traj` in the `relax` folder by using the GUI. You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom three layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. 
+Finally, you will be performing a geometry optimization on the 104 surface of LiCoO<sub>2</sub>. To proceed with this exercise, first take a look at the starting structure `LiCoO2-104.traj` in the `relax` folder by using the GUI. You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom three layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. Submit the calcualtion using vasp-ase.sub and be sure to change the file name accordingly.
 
 To check on the calculation while it is running use either 
 
@@ -190,13 +189,13 @@ or
 ```bash
 less out.XXXXX
 ```
-Once the calculation is completed and you have recieved an email go to the relax directory. The final energy will be printed in the last line of the out.XXXXX file. To see this line use the command `tail out.XXXXX`. You should see something like this:
+Once the calculation is completed and you have recieved an email go to the relax directory. The final energy will be printed in the last line of the out.XXXXX file. To see this line use the command `tail out.XXXXX`. Tail will print out the last few lines of the file. You should see something like this:
 
 ```bash
 Energy = -514.7679737
 max_forces = 0.015439
 ```
-Please be sure that the force is below the criteria set. The Energy list is the Eergy of the system.
+Please be sure that the force is below the criteria set. The Energy listed is the energy of the system.
 
 **HW 5:** Report the converged energy of the optimized structure. 
 
