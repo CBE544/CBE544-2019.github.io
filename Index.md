@@ -35,6 +35,7 @@ We will be using the [Atomic Simulation Environment (ASE)](https://wiki.fysik.dt
 ### Atomic Simulation Environment ###
 
 1. [Introduction to ASE](ASE/)
+2. [Getting Started with DFT](ASE/Getting Started/)
 
 ### Resources ###
 
