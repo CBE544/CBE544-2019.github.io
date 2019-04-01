@@ -13,15 +13,14 @@ ____
 
 ## Getting Started with DFT Calculations ##
 
-In the first exercise, we will be studying MXenes and how to determine their lattice constants, then we will be studying the interaction between the MXene and an adsorbate. For Homework 5, everyone will be studying the same system (Ti<sub>2</sub>C). For the Final Project, you will use the same structure but with different chemical composition (e.g., Mo<sub>2</sub>N instead of Ti<sub>2</sub>C).
+In the first exercise, we will be studying lithium cobalt and how to determine their lattice constants, followed by surface relaxation of the (104) surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with multiple facets (104 and 001) to study ethylene carbonate adosrption.
 
 ## Contents ##
 
 1. [A Typical ASE Script](#a-typical-ase-script)
-2. [MXenes](#mxene)
-  1. [Lattice Constant Determination](#lattice-constant-determination)
-  2. [Convergence with k-points](#convergence-with-k-points)
-3. [Next Steps](#next)
+2. [Lattice Constant Determination](#lattice-constant-determination)
+3. [Convergence with k-points](#convergence-with-k-points)
+4. [Optimization](#optimization)
 
 
 <a name='a-typical-ase-script'></a>
@@ -30,31 +29,37 @@ In the first exercise, we will be studying MXenes and how to determine their lat
 
 ASE scripts can be run directly in the terminal (in the login node) or submitting to external nodes. Generally, you will be submitting jobs to external nodes and only small scripts will be run on the login node. By default, all output from any submitted script will be written *from the directory where the submission command was executed*, so make sure you are inside the calculation folder before running the submission command.
 
-There are two files that are necessary to run jobs on the Stampede cluster. The first is `spede_esp.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
+To start this tutorial and the exercises that follow, log on to Stampede2 and download the following:
+```bash
+wget https://cbe544.github.io/CBE544-2018.github.io/ASE/HW5.tar.gz
+tar -zxvf HW5.tar.gz
+cd HW5
+```
+
+There are two files that are necessary to run jobs on the Chestnut cluster. The first is `vasp-ase.sub`; this is the file that tells the scheduler how much time the job is allowed, how many processors it requires, and other pertinent information. First, notice the comments in the beginning. These include information such as how much time to allocate, the number of nodes required, what the names of the output and error files are, what the name of the job should be, and what your email is. 
 
 ```bash
 #!/bin/bash
 
-#SBATCH -J test        # Job Name
-#SBATCH -A TG-CHE160084 # Allocation number: Do not change this
-#SBATCH -o ll_out    # Output file name
-#SBATCH -e ll_err    # Error file name
-#SBATCH -n 16          # Total number of cores requested
-#SBATCH -p development # which queue to run in
-#SBATCH -t 00:30:00     # Run time (hh:mm:ss)
-#SBATCH --mail-user=youremail@whatever.com # Make sure to change this!!!!
-#SBATCH --mail-type=end # Emails you at the end of the job
+#SBATCH -x node63,node64,node81                 #node to exclude due to problems. Do not change
+#SBATCH -p p_alevoj                             #partition to run on. do not change
+#SBATCH -N  2 #number of nodes
+#SBATCH --tasks-per-node=32                     #do not change
+#SBATCH -t 48:30:00 #time limit
+#SBATCH -J JOBNAME #job name                    #Name your job here
+#SBATCH -o out.%j #screen output                #output file name. %j is job number
+#SBATCH -e err.%j #errinfo                      #err file name
+#SBATCH --mail-user=EMAL@seas.upenn.edu         #add you email address here to be alerted when job ends
+#SBATCH --mail-type=end #notify when job finishes #mail when job ends
 
-which pw.x
-cd $SLURM_SUBMIT_DIR
-export TMPDIR=$SLURM_SUBMIT_DIR
-echo $EPS_PSP_PATH
-export OMP_NUM_THREADS=1
 
-python Energy.py
+#export VASP_GAMMA=true
+module load ase-vasp/run        #load vasp and ase
+
+python script-name.py   #name of script to run
 ```
 
-Finally, the last line ```python Energy.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running.
+Finally, the last line ```python script-name.py``` picks the script you want to run. Therefore, you need to change the name of the file depending on which script you are running. We will be using this script later in this section for performing calculations to compute the lattice constant of bulk LiCoO<sub>2</sub>.
 
 
 Let's look at how a typical ASE script is written. Open the [`Energy.py`](energy.py) script. We import all the relevant ASE modules in for this calculation
