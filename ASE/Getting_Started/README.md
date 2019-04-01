@@ -120,15 +120,14 @@ calc = Vasp(prec='normal',	#scf accuracy
 
 ```
 
-Finally, the Quantum ESPRESSO calculator is attached to the `slab` Atoms object, the energy calculation is ran, and the total energy of the system is output in the log file (defined in the `spede_esp.sub` file above). 
+Finally, the VASP calculator is attached to the `slab` Atoms object, the energy calculation is ran, and the total energy of the system is output in the log file (defined in the `spede_esp.sub` file above). 
 
-To submit the job, use:
+Once the scripts and atoms object is set up you can submit a job, using:
 
 ```bash
-sbatch -J $PWD spede_esp.sub
+sbatch vasp-ase.sub
 
 ```
-The `-J $PWD` gives the name of the job as the current directory. Make sure this calculations runs correctly before proceeding. You should get a total energy of -3353.960 eV.
 
 <a name='mxenes'></a>
 
@@ -136,16 +135,19 @@ The `-J $PWD` gives the name of the job as the current directory. Make sure this
 
 #### Lattice Constant Determination ####
 
-Find the [`Lattice_Constant.py`](Lattice_Constant.py) script in the `lattice` folder. This script calculates the different energies of the system as a function of the lattice constant. Before you run this job, make sure you read the comments within to understand what it does. You will later need to modify this file for the Final Project.
+Find the [`lattice-constant-a.py`](Lattice_Constant.py) script in the `lattice/a` folder. This script calculates the different energies of the system as a function of the lattice constant. Before you run this job, make sure you read the comments within to understand what it does.
 
-Remember to change the script name to Lattice_Constant.py in the `spede_esp.sub` file! Submit the script by running:
+```python
+
+
+Remember to change the script name to lattice-constant-a.py in the `vasp-ase.sub` file! Submit the script by running:
 
 ```bash
-sbatch --job-name=$PWD spede_esp.sub
+sbatch vasp-ase.sub
 ```
-Here, `--job-name=$PWD` sets the current working directory as the job name. 
 
-The output states the energy with respect to the given lattice constant. Take this data and plot it however you choose. Fit ~5 points near the minimum of this function with a quadratic function. Then, use calculus to find the minimum energy, and thus the DFT lattice constant.
+To proceed with writing this script, you will be modifying the example script provided here: [ASE-Equation of State](https://wiki.fysik.dtu.dk/ase/tutorials/eos/eos.html). Note that the sample script reads 5 configurations from the trajectory, but we have more configurations than that in our calculations. This script can be run on the login node directly. To execute the script you have written, use the command:
+
 
 **HW 5:** Plot the energies as listed above, and report the DFT lattice constant.
 
