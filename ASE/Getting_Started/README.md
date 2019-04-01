@@ -138,7 +138,16 @@ sbatch vasp-ase.sub
 Find the [`lattice-constant-a.py`](Lattice_Constant.py) script in the `lattice/a` folder. This script calculates the different energies of the system as a function of the lattice constant. Before you run this job, make sure you read the comments within to understand what it does.
 
 ```python
-
+eps=0.03
+a0=2.835
+c0=4.71
+a=[a0,0,0]
+b=[a0/2,(a0/2)*np.sqrt(3),0]
+c=[a0/2,a0/(2*np.sqrt(3)),c0]
+for X in np.linspace(1-eps,1+eps,7):
+	p=read('init.traj')
+ 	p.set_cell([[X*a[0],X*a[1],X*a[2]],[X*b[0],X*b[1],X*b[2]],[c[0],X*c[1],X*c[2]]],scale_atoms=True)
+```
 
 Remember to change the script name to lattice-constant-a.py in the `vasp-ase.sub` file! Submit the script by running:
 
