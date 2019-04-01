@@ -168,6 +168,8 @@ Repeat this process with the c lattice constant by going to the lattice/c direct
 
 c<sub>DFT</sub> = sqrt[(Volume/6.959)<sup>2</sup>+1.4175<sup>2</sup>+0.818<sup>2</sup>]
 
+These equations come from the angles of the unit cell. For more information on how these equations were derived look HCP stacking or ask Anthony.
+
 **HW 5:** Show your Python scripts for the EOS, Plot the Equation of State fits, and report the DFT lattice constants.
 
 <a name='convergence-with-k-points'></a>
