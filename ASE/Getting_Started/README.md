@@ -200,7 +200,7 @@ write('LiCoO2-104.traj',s1)	#write trajectory
 ```
 The resuting LiCoO2-104.traj should look something like this:
 
-IMAGE HERE
+![104 Surface of LiCoO2](Images/104-surface.png)
 
 
 You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom three layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. Submit the calcualtion using vasp-ase.sub and be sure to change the file name accordingly.
