@@ -180,7 +180,30 @@ Next, we will determine how well-converged the total energy is with respect to t
 **HW 5:** Show the k-point convergence plot, your pick for the k-points, and your rationale.
 
 #### Optimization ####
-Finally, you will be performing a geometry optimization on the 104 surface of LiCoO<sub>2</sub>. To proceed with this exercise, first take a look at the starting structure `LiCoO2-104.traj` in the `relax` folder by using the GUI. You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom three layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. Submit the calcualtion using vasp-ase.sub and be sure to change the file name accordingly.
+Finally, you will be performing a geometry optimization on the 104 surface of LiCoO<sub>2</sub>. The first thing that should be done here is the resize our bulk LiCoO<sub>2</sub> to the appropriate lattice constants. To do this return to the HW5 directory. Here you should see a script called resize.py. Put your values of a and c in line marked with #DFT lattice constant obtained previously. You can then run the python script on the login node by using:
+
+```python
+python resize.py
+```
+This should create a file called `LiCoO2-bulk-opt.traj`. This is what we will use to make the surface. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers. 
+
+```python
+from ase.io import read,write
+from ase.build import surface,bulk
+from ase import atoms
+from ase.visualize import view
+
+p=read('LiCoO2-bulk-opt.traj')	#bulk input
+s1 = surface(p, (1,0,4), 6)     #type of surface you want
+s1.center(vacuum=10,axis=2)	#center strucutre
+write('LiCoO2-104.traj',s1)	#write trajectory
+```
+The resuting LiCoO2-104.traj should look something like this:
+
+IMAGE HERE
+
+
+You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom three layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. Submit the calcualtion using vasp-ase.sub and be sure to change the file name accordingly.
 
 To check on the calculation while it is running use either 
 
