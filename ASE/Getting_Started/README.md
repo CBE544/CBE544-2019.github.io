@@ -202,8 +202,13 @@ The resuting LiCoO2-104.traj should look something like this:
 
 ![104 Surface of LiCoO2](Images/104-surface.png)
 
+We need to finish building our surface by repeating it in the y direction and constraining the bottom 3 layers. We can do this in ASE-GUI. Open the file and use the Edit -> Repeat to repeat the unit cell 4 times in the y direction. Once it has repeated click the set unit cell button. Now we must constrain the bottom three layers of our LiCoO<sub>2</sub>. To do this select the atoms in the bottom three layers of our slab and go to Tools -> Constratints -> Constrain Selected Atoms. It is is to tell which Li and Co are in the bottoms 3 layers but the Oxygen atoms may be confusing. Use the Figures below for reference to  constrain the correct rows of atoms. 
 
-You should see a 1x4x6 surface of LiCoO<sub>2</sub>, with the bottom three layers fixed to the bulk positions. Next, take a look at the `relax.py` script discussed previously. You will be using this script for running the surface optimization calculations. Submit the calcualtion using vasp-ase.sub and be sure to change the file name accordingly.
+![104 Surface Repeated with constraints-x](Images/104-surface-y1)
+![104 Surface Repeated with constraints-x](Images/104-surface-y2)
+![104 Surface Repeated with constraints-x](Images/104-surface-x)
+
+Once it has been repeated and constrained save this atoms object by File -> Save and name your file in the line as something like surface.traj. Copy this trajectory file to the relax directory. Next move into the relax directory and take a look at the `relax.py` script discussed previously. Please be sure that the relax script is reading in the proper trajecotry files. You will be using this script for running the surface optimization calculations. Submit the calcualtion using the vasp-ase.sub script and be sure to change the file name accordingly.
 
 To check on the calculation while it is running use either 
 
