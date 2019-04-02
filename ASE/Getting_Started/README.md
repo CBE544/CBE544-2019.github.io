@@ -228,5 +228,5 @@ max_forces = 0.015439
 ```
 Please be sure that the force is below the criteria set. The Energy listed is the energy of the system.
 
-**HW 5:** Report the converged energy of the optimized structure. 
+**HW 5:** Report the converged energy of the optimized structure. Comment on the surface changes of the final structure. 
 
