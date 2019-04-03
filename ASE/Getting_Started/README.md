@@ -12,7 +12,7 @@ ____
 
 ## Getting Started with DFT Calculations ##
 
-In the first exercise, we will be studying lithium cobalt and how to determine their lattice constants, followed by surface relaxation of the (104) surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with multiple facets (104 and 001) to study ethylene carbonate adosrption.
+In the first exercise, we will be studying lithium cobalt oxide and how to determine the lattice constants, followed by surface relaxation of the 104 surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with dopants on multiple facets (104 and 001) to study ethylene carbonate adosrption.
 
 ## Contents ##
 
@@ -76,7 +76,7 @@ An existing trajectory can be read in:
 
 ```python
 # read in the slab
-slab = read('LiCoO2.traj')
+slab = read('surface.traj')
 ```
 
 Then, the VASP calculator is set up. All parameters related to the electronic structure calculation are included here. The following example shows typical parameters that we use in the group for LiCoO<sub>2</sub> calculations.
@@ -204,7 +204,7 @@ The resuting LiCoO2-104.traj should look something like this:
 
 We need to finish building our surface by repeating it in the y direction and constraining the bottom 3 layers. We can do this in ASE-GUI. Open the file and use the Edit -> Repeat to repeat the unit cell 4 times in the y direction. Once it has repeated click the set unit cell button. Now we must constrain the bottom three layers of our LiCoO<sub>2</sub>. To do this select the atoms in the bottom three layers of our slab and go to Tools -> Constratints -> Constrain Selected Atoms. It is is to tell which Li and Co are in the bottoms 3 layers but the Oxygen atoms may be confusing. Use the Figures below for reference to  constrain the correct rows of atoms. 
 
-![104 Surface Repeated with constraints-x](Images/104-surface-y1.png) 
+<center>![104 Surface Repeated with constraints-x](Images/104-surface-y1.png)
 ![104 Surface Repeated with constraints-x](Images/104-surface-x.png)
 ![104 Surface Repeated with constraints-x](Images/104-surface-y2.png)
 
