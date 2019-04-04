@@ -19,7 +19,7 @@ We will be using the [Atomic Simulation Environment (ASE)](https://wiki.fysik.dt
 * 60% of final grade 
 * <font color="red">Due TBD</font>
 * [Project Description and Requirements](Project/)
-* [Project Assignments](Project_Assignment/)
+* [Project Assignments](Project_Assignments/)
 
 
 ## Guides ##
