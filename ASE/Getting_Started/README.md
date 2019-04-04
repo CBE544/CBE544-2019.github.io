@@ -163,7 +163,7 @@ python EOS-script.py
 
 This will plot the volumes vs energies and print the volume that related to the minimum energy. The output plot (EOS.png) should show the fitted energies as a function of the volume, with the volume corresponding to the minimum and the bulk modulus displayed on the top. To get the a<sub>DFT</sub> lattice constant take this volume and use this equation:
 
-a<sub>DFT</sub> = {2*Volume}/{(4.71)*sqrt(3)}
+a<sub>DFT</sub> = sqrt[{2*Volume}/{(4.71)*sqrt(3)}]
 
 Repeat this process with the c lattice constant by going to the lattice/c directory and running the script there. The process for the EOS will be the same but to get the c lattice constant you must use this formula.
 
