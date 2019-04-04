@@ -12,14 +12,14 @@ permalink: /Project/
 5. [Final Report](#report)
 
 
-For the Final Project, you will be studying thermo-chemical ammonia synthesis on 2D MXenes (M<sub>2</sub>X) with X = C or N. Each student will be assigned a MXene to work on either a carbide or a nitride (see list of Assigned Projects). The students will work in groups of two on the same MXene to perform calculations individually, however, complementing each other. Each pair of students will present their results in class that will be critiqued by another group of two. Finally, these four students will jointly write a final report on the combined data. The due date for the final written report is <font color="red">5/1 at 5:00 PM (hard deadline)</font>.
+For the Final Project, you will be studying ethylene carbonate adosrption on Lithium Cobalt Oxide (LiCoO<sub>2</sub>) with different dopant metals. Each group will be assigned a metal dopant to work with (see list of Assigned Projects). The students will work in groups of two or three on the same MXene to perform calculations individually, however, complementing each other. Each pair of students will present their results in class that will be critiqued by another group of two. Finally, each group  will jointly write a final report on the combined data. The due date for the final written report is <font color="red">5/8 at 5:00 PM (hard deadline)</font>.
 
 Please make use of the [Piazza](https://piazza.com/) page for troubleshooting, discussions and for sharing results.
 
 Turn in your final report by emailing a PDF file to:
 
 ```
-alevoj@seas.upenn.edu, liangzha@seas.upenn.edu
+alevoj@seas.upenn.edu, antcurto@seas.upenn.edu
 ```
 
 <a name='intro'></a>
