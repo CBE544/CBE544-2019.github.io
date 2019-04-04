@@ -43,14 +43,14 @@ table#t01 th    {
     <th>Group Member</th>
 </tr>
 <tr>
-    <td>Zr2C</td>
-    <td>Frey, Nathan Christopher<br>
-        Padmanabhan, Ashwin </td>
+    <td>Ti</td>
+    <td>Colin Lehman<br>
+        Alexandra Foucher </td>
 </tr>
 <tr>
-    <td>Zr2N </td>
-    <td>Price, Chris <br>
-        Raizada, Abhishek </td>
+    <td>Mg </td>
+    <td>Jay Horwath <br>
+        Pratik Khare </td>
 </tr>
 <tr>
     <td>Nb2C</td>
@@ -58,19 +58,11 @@ table#t01 th    {
     Saiprasad, Sai Aparna</td>
 </tr>
 <tr>
-    <td>Nb2N</td>
-    <td>Sankara Raman, Abhinav <br>
-    Tang, Xiaoxin </td>
+    <td>Ni</td>
+    <td>Quiles-Galarza, Genesis <br>
+    Aditya Roy <br>
+    Vinson Liao </td>
 </tr>
-<tr>
-    <td>Mo2C</td>
-    <td>Rajaraman, Vishwanathan <br>
-    Sridhar, Sudiksha </td>
-</tr>
-<tr class="last">
-    <td>Mo2N</td>
-    <td>Johnson, Luke Rachad<br>
-    Leach, Connor</td>
-</tr>
+
 
 </table>
