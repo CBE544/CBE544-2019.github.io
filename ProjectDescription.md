@@ -24,11 +24,9 @@ alevoj@seas.upenn.edu, antcurto@seas.upenn.edu
 
 <a name='intro'></a>
 
-<--- ## Introduction ##
+ ## Introduction ##
 
 
-
--->
 <a name='deadlines'></a>
 
 ## Deadlines ##
@@ -90,5 +88,4 @@ At a minimum you should accomplish the following:
     2. Kinetic rate analysis
 6. Report (3~5 pages maximum)
 
--->
--->
+
