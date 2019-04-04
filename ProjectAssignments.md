@@ -6,7 +6,7 @@ permalink: /Project_Assignments/
 
 ## Project Assignment
 
-Half of the class will be working on carbide MXenes and the other half will be working on nitride MXenes. Please confirm your assignments below:
+All groups will be assigned a different metal dopant to study in LiCoO<sub>2</sub>. Please follow the procedures on the Project Procedures confirm your assignments below:
 
 <table>
 <tr>
