@@ -118,7 +118,7 @@ calc = Vasp(prec='normal',	#scf accuracy
 )
 ```
 
-Finally, the VASP calculator is attached to the `slab` Atoms object, the energy calculation is ran, and the total energy of the system is output in the log file (defined in the `spede_esp.sub` file above). 
+Finally, the VASP calculator is attached to the `slab` Atoms object, the energy calculation is ran, and the total energy of the system is output in the log file (defined in the `vasp-ase.sub` file above). 
 
 Once the scripts and atoms object is set up you can submit a job, using:
 
