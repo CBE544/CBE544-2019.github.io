@@ -78,129 +78,23 @@ Your goals for the project will be to:
 For the Final Project, create a `FinalProj_M2X` folder (M2X is the material you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)) in your `CBE544` directory. For example, if you are assignemnt with Mo2C, please run the following command to create the directories: 
 
 ```bash
-cdw
+cd
 cd CBE544
-mkdir FinalProj_Mo2C 
+wget CBE544FinalProject
+tar -zxvf CBE544FinalProject.tar.gz
+cd CBE544FinalProject
 ```
-Please change Mo2C in the above command to the one you are assgined. 
-
-You may run the exercises in any directory (as long as it is under `$WORK`), but keep all the final files for the project organized.
-
-To describe the full reaction on your catalytic system, you will need to calculate the adsorption energies of all intermediates, in their most stable configuration (N\*, NH\*, NH<sub>2</sub>\*, NH<sub>3</sub>\*, H\*). A mean field approximation can be used in the analysis (*e.g.* ∆*E*<sub>2NH</sub> = 2∆*E*<sub>NH</sub>). You are not required to calculate any of the transition states for this assignment. Instead use the universal BEP relations for N<sub>2</sub> dissociation.
-
-First, download and unarchive the files you need via:
-
-```bash
-wget https://github.com/CBE544/CBE544.github.io/raw/master/Final_Project.tar.gz
-tar -zxvf Final_Project.tar.gz
-```
-
-This will create a directory named `Class`. Within, you will find pre-relaxed .traj files for the project. Your team will need the bare, O-terminated, and H-terminated MXenes. They are labeled as M2X.traj for the bare, M2XO2.traj for the O-terminated, and M2XH2.traj for the H-terminated; e.g. for Mo<sub>2</sub>C, the .traj file is Mo2C.traj for the bare MXene, Mo2CO2.traj for the O-terminated, and Mo2CH2.traj for the H-terminated.
-
-In summary:
-
-1. Structural relaxations on both the bare MXene and the two functionalized MXenes; that is, O-terminated and H-terminated. 
-2. Adsorption energies for the intermediates in the adsorbed state (N\*, NH\*, NH<sub>2</sub>\*, NH<sub>3</sub>\*, H\*). Check all possible sites in order to determine optimal adsorption configurations. 
-3. Energy diagrams for the overall reaction.
-<!--4. Calculation of the reaction rate and also a free energy diagram with some temperature and pressure dependence. [Project Part 3](../ASE/Transition_States)-->
-
-**IMPORTANT:**
-
-When you have finished all your calculations. Confirm that your results are organized in the following way:
-
-```bash
-$WORK/CBE544/FinalProj_M2X/bare/
-$WORK/CBE544/FinalProj_M2X/bare/cleansur/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/N/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/N/config
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/NH/
-$WORK/CBE544/FinalProj_M2X/bare/Adsorption/NH/config
-...
-$WORK/CBE544/FinalProj_M2X/O-term/
-$WORK/CBE544/FinalProj_M2X/O-term/cleansur/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/N/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/N/config
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/NH/
-$WORK/CBE544/FinalProj_M2X/O-term/Adsorption/NH/config
-...
-$WORK/CBE544/FinalProj_M2X/H-term/
-$WORK/CBE544/FinalProj_M2X/H-term/cleansur/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/N/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/N/config
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/NH/
-$WORK/CBE544/FinalProj_M2X/H-term/Adsorption/NH/config
-...
-```
-
-You should rename `config` to describe the binding configuration, such as `fcc`, `hcc`, `top`, `bridge` sites. You should have one calculation per directory.
-
-**Access Your Teammate's directory:**
-
-The following path contains the paths to your teammate's directory, 
-```bash
-/home1/03672/tg829713/lnk_CBE544
-```
-
-You can create a link of the above path so that you can easily access it in the future. Be sure to change M2X to the material you are assigned
-
-```bash
-ln -s /home1/03672/tg829713/lnk_CBE544/M2X FPteam
-```
-
-<a name='analysis'></a>
 
 ## Analysis ##
-Your analysis abd final report should include the following:
-
-1. Structures of bare MXenes and the H- and O-terminated MXenes.
-2. Adsorption energies and structures for all intermediates in the adsorbed state (N\*, NH\*, NH<sub>2</sub>\*, NH<sub>3</sub>\*, H\*) on the bare and the two functionalized Mxenes. Determine what is the optimal reaction site for each system. Discussion of the optimal binding configurations on the surface.
-3. Energy diagrams for the overall reaction for bare, O- and H-terminated Mxenes. Preferably combined in one figure for easy comparison. Comparison between the different systems.
-4. Establish scaling relations between intermediates.
-5. Calculate the reaction rate of the systems you've studied with using the following assumptions:
-
-    a. Single active site model
-    
-    b. N<sub>2</sub> dissociation is rate determining step
-    
-    c. TS of N<sub>2</sub> dissociation follows the universal BEP relation (see Eqs. on page 93 in "Fundamental Concepts in Heterogenous Catalysis" by Nørskov et al.) for either close-packed or stepped surfaces. Please motivate your choice(s) for the different systems.
-
-    d. Use the following total energies for N2, H2, and NH3:
-    ```
-        N2:  -555.10 eV
-        H2: -32.94 eV 
-        NH3: -327.72 eV
-    ```
-    e. The ZPE corrections should be assumed to be negligable
-    
-    d. Entropies of gas phase molecules should be taken as the experimental values from [NIST](http://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&Mask=1). Please keep in mind that entropy is a function of temperature. 
-
-<a name='report'></a>
 
 ## Final Report ##
 
-The final report should be in the form of a 3-5 pages long mini paper including figures and tables. One report for each group of 4 people formed according to the metal of the Mxene. Please be succinct and organize it in the following way:
+The final report should be in the form of a 3-5 pages long mini paper including figures and tables. One report for each group. Please be succinct and organize it in the following way:
 
 * Introduction (brief) - don't write too much
 * Calculation details
 * Results and discussion
 * Conclusion (brief)
-
-**Archieve Calculations:**
-
-Under your final project directory, please create a folder named `opt-sites`, and then put everything there in an organized way: For each stable sites, please create a folder `X-Y-Z`, and put corresponding `.traj` and `ll_out` (use the last one if you have multiple runs) in the folder. 
-
-* X is termination: `bare`, `H`, `O`
-* Y is adsorbate: `H`, `N`, `NH`, `NH2`, `NH3`
-* Z is adsorption site of the final geometry: `hcp`, `top`, `fcc`
-
-
-
-<!--
-
-
 
 You are welcome to share data amongst your peers to discuss broader trends. 
 
@@ -222,7 +116,7 @@ You are welcome to share data amongst your peers to discuss broader trends.
 At a minimum you should accomplish the following:
 
 1. Complete the [three exercises](../ASE/).
-2. Setup a M<sub>13</sub> cluster and a (111) surface and calculate adsorption energies for all intermediates.
+2. Setup a LiCoO<sub>2</sub> cluster and a (111) surface and calculate adsorption energies for all intermediates.
 3. Calculate transition states for the first step N<sub>2</sub> dissociation) using the fixed bond-length method. Extra credit for calculating the hydrogenation barriers.
 4. Vibrational frequency and free energy calculations (initial, transition, and final states, and all adsorbed intermediates). 
 5. Analysis
