@@ -26,7 +26,7 @@ All groups will be assigned a different metal dopant to study in LiCoO<sub>2</su
 
 <tr>
     <td>Ni</td>
-    <td>Quiles-Galarza, Genesis <br>
+    <td> Genesis Quiles-Galarza<br>
     Aditya Roy <br>
     Vinson Liao </td>
 </tr>
