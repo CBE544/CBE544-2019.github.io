@@ -39,7 +39,7 @@ alevoj@seas.upenn.edu, antcurto@seas.upenn.edu
 
 ## Calculations ##
 
-For the Final Project, create a `FinalProj_M2X` folder (M2X is the material you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)) in your `CBE544` directory. For example, if you are assignemnt with Mo2C, please run the following command to create the directories: 
+For the Final Project, create a `M-surf` or `M-subsurf' folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)) in your `CBE544FinalProject` directory. For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
 
 ```bash
 cd
@@ -47,6 +47,7 @@ cd CBE544
 wget CBE544FinalProject
 tar -zxvf CBE544FinalProject.tar.gz
 cd CBE544FinalProject
+mkidr Ni-surf
 ```
 
 ## Analysis ##
