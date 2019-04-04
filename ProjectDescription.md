@@ -66,9 +66,10 @@ Your goals for the project will be to:
 <a name='deadlines'></a>
 
 ## Deadlines ##
-1. Show energy diagram for bare MXene on Wed April 12 on a Power Point slide (Each group)
-2. Presentation date Fri Apr 21 (Each group 15 min including presentation and Q&A. Note: Total 90 mins)
-3. Hand in a final written report: Mon 1 May at 5:00 PM
+1. HW5 Due: Wed 10 April (Each student)
+2. Short update (few slides) on completed calcualtions: Wed 17 April during class (per group)
+3. Final Presentation: Wed 1 May during class (per group)
+4. Final Paper: Wed 8 May by 5 PM (per group)
 
 <a name='calcs'></a>
 
