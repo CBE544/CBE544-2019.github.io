@@ -12,7 +12,7 @@ ____
 
 ## Getting Started with DFT Calculations ##
 
-In the first exercise, we will be studying lithium cobalt oxide and how to determine the lattice constants, followed by surface relaxation of the 104 surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with dopants on multiple facets (104 and 001) to study ethylene carbonate adosrption.
+In the first exercise, we will be studying lithium cobalt oxide: how to determine the lattice constants, followed by surface relaxation of the 104 surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with dopants on multiple facets (104 and 001) to study ethylene carbonate adsorption.
 
 ## Contents ##
 
