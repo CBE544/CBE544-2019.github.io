@@ -176,17 +176,16 @@ These equations come from the angles of the unit cell. For more information on h
 <a name='convergence-with-k-points'></a>
 
 #### Convergence with k-Points ####
+The first thing that should be done here is the resize our bulk LiCoO<sub>2</sub> to the appropriate lattice constants. To do this return to the HW5 directory. Here you should see a script called resize.py. Put your values of a and c in line marked with #DFT lattice constant obtained previously. You can then run the python script on the login node by using: `python ressize.py` 
+
+This should create a file called `LiCoO2-bulk-opt.traj`. This is what we will use to make the surface and test the kpoints. 
+
 Next, we will determine how well-converged the total energy is with respect to the number of k-points in each direction. You will be running the kptconv.py script in the k-points folder. Look through the script to understand what its doing. Run this script by submitting a job to an external node as discussed previously. Remember to change the name of the script to execute, in the spede_esp.sub file. Upon completion, the script outputs a convergence plot and prints the total energies as a function of the k-points used in the calculation.
 
 **HW 5:** Show the k-point convergence plot, your pick for the k-points, and your rationale.
 
 #### Optimization ####
-Finally, you will be performing a geometry optimization on the 104 surface of LiCoO<sub>2</sub>. The first thing that should be done here is the resize our bulk LiCoO<sub>2</sub> to the appropriate lattice constants. To do this return to the HW5 directory. Here you should see a script called resize.py. Put your values of a and c in line marked with #DFT lattice constant obtained previously. You can then run the python script on the login node by using:
-
-```python
-python resize.py
-```
-This should create a file called `LiCoO2-bulk-opt.traj`. This is what we will use to make the surface. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers. 
+Finally, you will be performing a geometry optimization on the 104 surface of LiCoO<sub>2</sub>. This is what we will use to make the surface. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers.
 
 ```python
 from ase.io import read,write
@@ -199,7 +198,6 @@ s1 = surface(p, (1,0,4), 6)     #type of surface you want
 s1.center(vacuum=10,axis=2)	#center strucutre
 write('LiCoO2-104.traj',s1)	#write trajectory
 ```
-
 Similar to the EOS module the build module is also only available in ase/3.13.0. If you have left the terminal since the last time you loaded it you will need to reload it again before submitting the python script. This should go like this. 
 
 ```bash
