@@ -20,7 +20,7 @@ We will be using the [Atomic Simulation Environment (ASE)](https://wiki.fysik.dt
 * <font color="red">Due TBD</font>
 * Project Description and Requirements
 <!---* [Project Description and Requirements]() --->
-* [Project Assignnments](ProjectAssignnments/)
+* [Project Assingnments](ProjectAssignments/)
 
 
 ## Guides ##
