@@ -185,7 +185,7 @@ Next, we will determine how well-converged the total energy is with respect to t
 **HW 5:** Show the k-point convergence plot, your pick for the k-points, and your rationale.
 
 #### Optimization ####
-Finally, you will be performing a geometry optimization on the 104 surface of LiCoO<sub>2</sub>. This is what we will use to make the surface. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers.
+Finally, you will be performing a geometry optimization on the 104 surface of LiCoO<sub>2</sub>. We will use the LiCoO2-bulk-opt.traj to make the surface. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers. To proceed look at the file `build-surface.py`. This script reads in the optimized bulk trajectory and creates the 104 surface repeated with 6 layers.
 
 ```python
 from ase.io import read,write
