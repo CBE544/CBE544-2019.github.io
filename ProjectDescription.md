@@ -4,7 +4,7 @@ mathjax: true
 permalink: /Project/
 ---
 
-## Course Project ##
+## Course Project 
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
@@ -24,7 +24,7 @@ alevoj@seas.upenn.edu, antcurto@seas.upenn.edu
 
 <a name='intro'></a>
 
-## Introduction ##
+<--- ## Introduction ##
 
 The thermo-chemical synthesis of ammonia is accomplished through the [Haber-Bosch process](http://en.wikipedia.org/wiki/Haber_process), where nitrogen gas reacts with hydrogen gas via:
 
@@ -230,4 +230,5 @@ At a minimum you should accomplish the following:
     2. Kinetic rate analysis
 6. Report (3~5 pages maximum)
 
+-->
 -->
