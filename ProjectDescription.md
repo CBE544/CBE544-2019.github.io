@@ -26,42 +26,6 @@ alevoj@seas.upenn.edu, antcurto@seas.upenn.edu
 
 <--- ## Introduction ##
 
-The thermo-chemical synthesis of ammonia is accomplished through the [Haber-Bosch process](http://en.wikipedia.org/wiki/Haber_process), where nitrogen gas reacts with hydrogen gas via:
-
-$$
-\mathrm{N_2+3H_2\rightarrow 2NH_3}
-$$
-
-This process is crucial for the industrial production of fertilizers and chemical feedstocks. Typically, an iron catalyst is used to stabilize the bond-breaking of the N<sub>2</sub> species. The reaction can be separated into elementary reaction steps ([Honkala et. al. (2005)](http://dx.doi.org/10.1126/science.1106435) for more details):
-
-$$
-\begin{align}
-\mathrm{N_{2\,(g)}} &\rightarrow \mathrm{2N*}\\
-\mathrm{H_{2\,(g)}} &\rightarrow \mathrm{2H*}\\
-\mathrm{N* + H*} &\rightarrow \mathrm{NH*}\\
-\mathrm{NH* + H*} &\rightarrow \mathrm{NH_2*}\\
-\mathrm{NH_2* + H*} &\rightarrow \mathrm{NH_3*}\\
-\mathrm{NH_3*} &\rightarrow \mathrm{NH_{3\,(g)}}
-\end{align}
-$$
-
-A free energy diagram is illustrated below:
-
-<center><img src="../Images/N2_path.jpg" alt="N2 path" style="width: 450px;"/>
-<br>Ammonia synthesis pathway on a Ru catalyst (<a href="http://dx.doi.org/10.1126/science.1106435">Honkala et. al. (2005)</a>)</center>
-
-Due to the high operating pressures and temperatures required for this reaction, alternative catalysts are still needed for this process. [Medford et. al. (2015)](http://dx.doi.org/10.1016/j.jcat.2014.12.033) have suggested that the linear scaling between the dissociation energy of N<sub>2</sub> and its transition state energy prevents most catalysts from achieving a high rate. Assuming that the bond-breaking of N<sub>2</sub> is rate limiting, then traditional metal catalysts have a transition state that is too high in energy. This is illustrated in the filled contour plot below, where the turnover frequency is plotted as a function of the transition state energy of the first N<sub>2</sub> bond breaking (*E*<sub>N-N</sub>) and the dissociation energy (∆*E*<sub>diss</sub>). A catalyst would need to behave differently from these extended surfaces in order to land in a more active region of the map. 
-
-<center><img src="../Images/N2_volcano.png" alt="N2 volcano" style="width: 400px;"/>
-<br>Filled contour plot for the turnover frequencies (Singh et. al. (2016))</center>
-
-We will be exploring 2D MXenes where such configurations might be found. 
-
-Your goals for the project will be to: 
-(1) explore this reaction to find unique adsorption configurations and possibly more favorable thermodynamics,
-(2) explore if the theormodynamics can be changed with functionalization of the MXenes,
-(3) explore relations between the reaction intermediates in the pathway,
-(4) compare the chemsitry of the carbide and nitride MXenes.
 
 <a name='deadlines'></a>
 
