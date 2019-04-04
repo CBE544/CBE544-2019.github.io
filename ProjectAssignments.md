@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: false
-permalink: /Project_Assignments/
+permalink: Project_Assignments/
 ---
 
 ## Project Assignment
