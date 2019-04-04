@@ -154,9 +154,10 @@ sbatch vasp-ase.sub
 
 To proceed with writing this script, you will be modifying the example script provided here: [ASE-Equation of State](https://wiki.fysik.dtu.dk/ase/tutorials/eos/eos.html). Note that the sample script reads 5 configurations from the trajectory, but we have 7 in our calculations.  
 
-This script can be run on the login node directly. To execute the script you have written, use the command:
+The EOS module for ASE is only available in the new version of ase. In order to load this we must load ase/3.13.0 before running the script. This script can be run on the login node directly. To execute the script you have written, use the command:
 
 ```python
+module load ase/3.13.0
 python EOS-script.py
 ```
 
@@ -198,18 +199,25 @@ s1 = surface(p, (1,0,4), 6)     #type of surface you want
 s1.center(vacuum=10,axis=2)	#center strucutre
 write('LiCoO2-104.traj',s1)	#write trajectory
 ```
+
+Similar to the EOS module the build module is also only available in ase/3.13.0. If you have left the terminal since the last time you loaded it you will need to reload it again before submitting the python script. This should go like this. 
+
+```bash
+module load ase/3.13.0
+python build-surface.py
+```
 The resuting LiCoO2-104.traj should look something like this:
 
 ![104 Surface of LiCoO2](Images/104-surface.png)
 
-We need to finish building our surface by repeating it in the y direction and constraining the bottom 3 layers. We can do this in ASE-GUI. Open the file and use the Edit -> Repeat to repeat the unit cell 4 times in the y direction. Once it has repeated click the set unit cell button. Now we must constrain the bottom three layers of our LiCoO<sub>2</sub>. To do this select the atoms in the bottom three layers of our slab and go to Tools -> Constratints -> Constrain Selected Atoms. It is is to tell which Li and Co are in the bottoms 3 layers but the Oxygen atoms may be confusing. Use the Figures below for reference to  constrain the correct rows of atoms. 
+We need to finish building our surface by repeating it in the y direction and constraining the bottom 3 layers. We can do this in ASE-GUI. Open the file (`ase-gui LiCoO2-104.traj` or `ag LiCoO2-104.traj`) and use the Edit -> Repeat to repeat the unit cell 4 times in the y direction. Once it has repeated click the set unit cell button. Now we must constrain the bottom three layers of our LiCoO<sub>2</sub>. To do this select the atoms in the bottom three layers of our slab and go to Tools -> Constratints -> Constrain Selected Atoms. It is easy to tell which Li and Co are in the bottoms 3 layers but the Oxygen atoms may be confusing. Use the Figures below for reference to  constrain the correct rows of atoms. 
 
 ![104 Surface Repeated with constraints-x](Images/104-surface-y1.png)
 ![104 Surface Repeated with constraints-x](Images/104-surface-x.png)
 ![104 Surface Repeated with constraints-x](Images/104-surface-y2.png)
 
 
-Once it has been repeated and constrained save this atoms object by File -> Save and name your file in the line as something like surface.traj. Copy this trajectory file to the relax directory. Next move into the relax directory and take a look at the `relax.py` script discussed previously. Please be sure that the relax script is reading in the proper trajecotry files. You will be using this script for running the surface optimization calculations. Submit the calcualtion using the vasp-ase.sub script and be sure to change the file name accordingly.
+Once it has been repeated and constrained save this atoms object by File -> Save and name your file in the line as surface.traj. Copy this trajectory file to the relax directory. Next move into the relax directory and take a look at the `relax.py` script discussed previously. Please be sure that the relax script is reading in the proper trajecotry files. You will be using this script for running the surface optimization calculations. Submit the calcualtion using the vasp-ase.sub script and be sure to change the file name accordingly.
 
 To check on the calculation while it is running use either 
 
