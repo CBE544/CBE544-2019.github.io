@@ -75,16 +75,15 @@ mkidr Ni-surf
 Once you have accurately completed HW1 you can use your 104 surface to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
 
 <center><img src="../Images/dopantlocations.png" alt="window" style="width: 800px;"/><br>
-Locations for Dopants is LiCoO<sub>2</sub>
+Locations for Dopants in LiCoO<sub>2</sub>
 </center>
 
-Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script submit the job.
-
-
-
-Using these models adsorb EC to the three locations (per system) shown below:
+Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script submit the job. Record the final energies which can be used to determine if the preferred dopant location is surface or subsurface.
 
 ### Task 2: ### 
+Using these models from Task 1 we can now adsorb EC to the three locations (per system) shown below:
+
+
 Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the EC adsorbate. 
 
 ### Task 3: ### 
