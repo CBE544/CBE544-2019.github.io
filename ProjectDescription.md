@@ -30,7 +30,7 @@ Goal: Understand how different metal dopants affect the structure and reactivity
 
 Plan: Use DFT to study dopant effects on structure and changes it causes to EC adsorption on the surface of LiCoO2. Study the electronic structure of LiCoO2 and doped LiCoO2 to see if any trends exist.
 
-Motivation
+### Motivation ###
 
 LiMO2 (M= Co, Mn, Ni are the most common cathode materials in batteries today. LiCoO2 is by far the most popular of those materials. A combination of effects has lead to investigations to improve the stability of LiCoO2 cathode materials or find suitable alternatives. Some problematic effects include cost, reactivity, structural problems. Decomposition of the liquid electrolyte is a common cause of decreased battery performance. Ethylene carbonate is a popular component of the elctrolyte solution in Li ion batteries. In order to improve battery performance critical importance in improving battery operation is understanding the electrode – electrolyte interface. For high capacity battery materials, electrolytes decomposed causing the battery to decrease in performance. 
 
@@ -70,7 +70,7 @@ mkidr Ni-surf
 ## Analysis ##
 
 
-# Requirements #
+### Requirements ###
 
 At a minimum you should accomplish the following:
 
@@ -83,14 +83,14 @@ At a minimum you should accomplish the following:
     2. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption?
 6. Report (3~5 pages maximum)
 
-# Final Report #
+### Final Report ###
 
 The final report should be in the form of a 3-5 pages long mini paper including figures and tables. Provide one report for each group. Please be succinct and organize it in the following way:
 
-Introduction (brief) - don’t write too much
-Calculation details
-Results and discussion including analysis.
-Conclusion (brief)
+**Introduction (brief) - don’t write too much
+**Calculation details
+**Results and discussion including analysis.
+**Conclusion (brief)
 
 You are welcome to share data amongst your peers to discuss broader trends. 
 
