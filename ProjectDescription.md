@@ -98,4 +98,4 @@ At a minimum you should accomplish the following:
     2. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption?
 6. Report (3~5 pages maximum)
 
-
+##
