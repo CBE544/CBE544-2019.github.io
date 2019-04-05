@@ -35,12 +35,12 @@ Motivation
 LiMO2 (M= Co, Mn, Ni are the most common cathode materials in batteries today. LiCoO2 is by far the most popular of those materials. A combination of effects has lead to investigations to improve the stability of LiCoO2 cathode materials or find suitable alternatives. Some problematic effects include cost, reactivity, structural problems. Decomposition of the liquid electrolyte is a common cause of decreased battery performance. Ethylene carbonate is a popular component of the elctrolyte solution in Li ion batteries. In order to improve battery performance critical importance in improving battery operation is understanding the electrode – electrolyte interface. For high capacity battery materials, electrolytes decomposed causing the battery to decrease in performance. 
 
 
-<img src="Images/LiIonBatteries.png" width="500">
+<div style="text-align:center"><img src="Images/LiIonBatteries.png" width="500"></div>
 AIP Conference Proceedings 1597, 26 (2014); https://doi.org/10.1063/1.4878478 Published Online: 17 February 2015
 
 Ongoing work in the [Cabana Group](https://cabana.chem.uic.edu/) at UIC has shown that some metal dopants, specifically Al in LiCoO<sub>2</sub> can increase the lifetime of the batteries. Well defined nanocrystals of LiCoO<sub>2</sub> can be synthesized and subsequnetly test for battery performance. The Figure below shows a schematic of the nanocrystals synthesized at UIC. With this information we can model the individual facets of the nanocrystal and study the effect on EC adsorption metal dopants will have in each region. 
 
-<img src="Images/nanocrystals.png" width="500" align:center)
+<img src="Images/nanocrystals.png" width="500" align:"center">
 
 
 
