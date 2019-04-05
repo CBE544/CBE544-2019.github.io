@@ -87,12 +87,12 @@ At a minimum you should accomplish the following:
 
 The final report should be in the form of a 3-5 pages long mini paper including figures and tables. Provide one report for each group. Please be succinct and organize it in the following way:
 
-**Introduction (brief) - don’t write too much
-**Calculation details
-**Results and discussion including analysis.
-**Conclusion (brief)
+* Introduction (brief) - don’t write too much
+* Calculation details
+* Results and discussion including analysis.
+* Conclusion (brief)
 
 You are welcome to share data amongst your peers to discuss broader trends. 
 
 ## 
-##
+
