@@ -79,7 +79,7 @@ Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add th
 
 ### Task 2: ### 
 
-Once you have converged both the systems with and without EC we can begin to do a bader charge analysis. Inside the directory where your calculations were run make a new directory called bader (by doing `mkdir bader`). Copy into this directory  fin.traj and vasp-ase.sub. Copy from the FinalProject directory the badercharge.py script. It will look like this:
+Once you have converged the systems with and without EC we can begin to do a [bader charge analysis](http://theory.cm.utexas.edu/henkelman/code/bader/).  Inside the directory where your calculations were run make a new directory called bader (by doing `mkdir bader`). Copy into this directory  fin.traj and vasp-ase.sub. Rename your fin.traj to init.traj (`mv fin.traj init.traj`). Copy from the FinalProject/scripts directory the badercharge.py script. It will look like this:
 
 ```python
 #!/usr/bin/env python
