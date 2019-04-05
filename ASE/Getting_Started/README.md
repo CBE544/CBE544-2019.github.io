@@ -238,3 +238,6 @@ Please be sure that the force is below the criteria set. The Energy listed is th
 
 **HW 5:** Report the converged energy of the optimized structure. Comment on the surface changes of the final structure. 
 
+##Note about Running on Chestnut##
+
+The designated nodes for running on chestnut that we are allotted to sometimes have difficultly in parellelization. If you have a job runnig for longer than expect (20-30 mintues for lattice and kpoints) or about 3-4 hours for the relaxation please go to the directory of the job and type cancel your job by typing `scancel JOBID`. Your JOBID can be found by typing sq and it will be listed on the far left column. After this edit the line in your vasp-ase.sub script which read "#SBATCH -x node63,node64,node81" to say "#SBATCH -x node63,node64,node81,node56,node57,node62,node55,node54". Then resubmit your job. 
