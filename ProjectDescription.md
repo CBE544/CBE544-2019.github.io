@@ -4,7 +4,7 @@ mathjax: true
 permalink: /Project/
 ---
 
-## Course Project 
+## Course Project ##
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
@@ -39,7 +39,7 @@ Schematic of Li Ion Batteries
 </center>
 
 
-AIP Conference Proceedings 1597, 26 (2014); https://doi.org/10.1063/1.4878478 Published Online: 17 February 2015</div>
+AIP Conference Proceedings 1597, 26 (2014); https://doi.org/10.1063/1.4878478 Published Online: 17 February 2015
 
 Ongoing work in the [Cabana Group](https://cabana.chem.uic.edu/) at UIC has shown that some metal dopants, specifically Al in LiCoO<sub>2</sub> can increase the lifetime of the batteries. Well defined nanocrystals of LiCoO<sub>2</sub> can be synthesized and subsequnetly test for battery performance. The Figure below shows a schematic of the nanocrystals synthesized at UIC. With this information we can model the individual facets of the nanocrystal and study the effect on EC adsorption metal dopants will have in each region. 
 
@@ -114,5 +114,5 @@ The final report should be in the form of a 3-5 pages long mini paper including 
 
 You are welcome to share data amongst your peers to discuss broader trends. 
 
-## 
+
 
