@@ -84,26 +84,18 @@ You are welcome to share data amongst your peers to discuss broader trends.
 
 <a name='grading'></a>
 
-## Grading ##
-
-* 30% exercises
-* 20% write-up
-* 20% kinetics
-* 30% calculations
-
-<a name='reqs'></a>
 
 ## Requirements ##
 
 At a minimum you should accomplish the following:
 
-1. Complete the [three exercises](../ASE/).
-2. Setup a LiCoO<sub>2</sub> cluster and a (111) surface and calculate adsorption energies for all intermediates.
-3. Calculate transition states for the first step N<sub>2</sub> dissociation) using the fixed bond-length method. Extra credit for calculating the hydrogenation barriers.
-4. Vibrational frequency and free energy calculations (initial, transition, and final states, and all adsorbed intermediates). 
+1. Complete the [three exercises](../ASE/Getting_Started).
+2. Setup a LiCoO<sub>2</sub> surface (104) and calculate adsorption energies for EC adsorption as three sites for two different metal dopant locations (surface and sub-surface).
+3. Do a Bader Charge Analysis on metal doped system and metal doped system w/ EC and compare to the provided systems without and dopant and with an Al dopant.
+4. Repeat this process on the 001 facet. Instead of doing is for surface and subsurface we will do this for Li-terminated and CoO<sub>2</sub> terminated. 
 5. Analysis
-    1. Optimal adsorption sites (relation to transition states)
-    2. Kinetic rate analysis
+    1. How does the metal dopant affect adsorption vs plain LiCoO<sub>2</sub>? vs Al-doped? How is the adosrption different for surface vs sub-surface?
+    2. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption?
 6. Report (3~5 pages maximum)
 
 
