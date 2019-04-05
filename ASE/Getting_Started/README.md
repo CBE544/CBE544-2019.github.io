@@ -12,7 +12,7 @@ ____
 
 ## Getting Started with DFT Calculations ##
 
-In the first exercise, we will be studying lithium cobalt oxide: how to determine the lattice constants, followed by surface relaxation of the 104 surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with dopants on multiple facets (104 and 001) to study ethylene carbonate adsorption.
+In the first exercise, we will be studying lithium cobalt oxide; how to determine the lattice constants, followed by surface relaxation of the 104 surface. For Homework 5, everyone will be studying the same system (104) LiCoO<sub>2</sub>. For the Final Project, you will use the same system but with dopants on multiple facets (104 and 001) to study ethylene carbonate adsorption.
 
 ## Contents ##
 
@@ -212,7 +212,7 @@ The resuting LiCoO2-104.traj should look something like this:
 
 We need to finish building our surface by repeating it in the y direction and constraining the bottom 3 layers. We can do this in ASE-GUI. Open the file (`ase-gui LiCoO2-104.traj` or `ag LiCoO2-104.traj`) and use the Edit -> Repeat to repeat the unit cell 4 times in the y direction. Once it has repeated click the set unit cell button. Now we must constrain the bottom three layers of our LiCoO<sub>2</sub>. To do this select the atoms in the bottom three layers of our slab and go to Tools -> Constratints -> Constrain Selected Atoms. It is easy to tell which Li and Co are in the bottoms 3 layers but the Oxygen atoms may be confusing. Use the Figures below for reference to  constrain the correct rows of atoms. 
 
-<center><img src="Images/04-surface-y1.png" alt="window" style="width: 600px;"/><br>
+<center><img src="Images/104-surface-y1.png" alt="window" style="width: 600px;"/><br>
 Nanocrystals from the Cabana Group
 <img src="Images/104-surface-x.png" alt="window" style="width: 600px;"/><br>
 Nanocrystals from the Cabana Group><img src="Images/104-surface-y2.png" alt="window" style="width: 600px;"/><br>
