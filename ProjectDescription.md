@@ -34,7 +34,7 @@ Plan: Use DFT to study dopant effects on structure and changes it causes to EC a
 
 LiMO2 (M= Co, Mn, Ni are the most common cathode materials in batteries today. LiCoO2 is by far the most popular of those materials. A combination of effects has lead to investigations to improve the stability of LiCoO2 cathode materials or find suitable alternatives. Some problematic effects include cost, reactivity, structural problems. Decomposition of the liquid electrolyte is a common cause of decreased battery performance. Ethylene carbonate is a popular component of the elctrolyte solution in Li ion batteries. In order to improve battery performance critical importance in improving battery operation is understanding the electrode – electrolyte interface. For high capacity battery materials, electrolytes decomposed causing the battery to decrease in performance. 
 
-<center><img src="Images/LiIonBatteries.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/LiIonBatteries.png" alt="window" style="width: 400px;"/><br>
 2 x 2 surface of Ti<sub>2</sub>C
 </center>
 
