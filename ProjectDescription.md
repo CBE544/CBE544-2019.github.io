@@ -4,7 +4,7 @@ mathjax: true
 permalink: /Project/
 ---
 
-## Course Project ##
+## Course Project 
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
@@ -64,22 +64,32 @@ For the Final Project, create a `M-surf` or `M-subsurf` folder (M is the metal y
 ```bash
 cd
 cd CBE544
-wget CBE544FinalProject
-tar -zxvf CBE544FinalProject.tar.gz
-cd CBE544FinalProject
+wget XXXX
+tar -zxvf FinalProject.tar.gz
+cd FinalProject
 mkidr Ni-surf
 ```
 
 ### Task 1: ### 
 
-Once you have accurately completed HW1 you can use your 104 surface to place a metal dopant on the surface and subsurface (separately, so two total calculations). Using these models adsorb EC to the three locations shown below:
+Once you have accurately completed HW1 you can use your 104 surface to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
+
+<center><img src="../Images/dopantlocations.png" alt="window" style="width: 800px;"/><br>
+Locations for Dopants is LiCoO<sub>2</sub>
+</center>
+
+Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script submit the job.
 
 
-Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the EC adsorbate. 
+
+Using these models adsorb EC to the three locations (per system) shown below:
 
 ### Task 2: ### 
+Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the EC adsorbate. 
 
-Once you have converged the systems with and without EC we can begin to do a [bader charge analysis](http://theory.cm.utexas.edu/henkelman/code/bader/).  Inside the directory where your calculations were run make a new directory called bader (by doing `mkdir bader`). Copy into this directory  fin.traj and vasp-ase.sub. Rename your fin.traj to init.traj (`mv fin.traj init.traj`). Copy from the FinalProject/scripts directory the badercharge.py script. It will look like this:
+### Task 3: ### 
+
+Once you have converged the systems with and without EC we can do a [bader charge analysis](http://theory.cm.utexas.edu/henkelman/code/bader/).  Inside the directory where your calculations were run make a new directory called bader (by doing `mkdir bader`). Copy into this directory  fin.traj and vasp-ase.sub. Rename your fin.traj to init.traj (`mv fin.traj init.traj`). Copy from the FinalProject/scripts directory the badercharge.py script. It will look like this:
 
 ```python
 #!/usr/bin/env python
@@ -148,7 +158,7 @@ python ~/FinalProject/bader_get_charge_vasp
 ```
 This while write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. 
 
-### Task 3: ###
+### Task 4: ###
 
 Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. Use the sites clearly depicted below to see where to adosrb the EC. 
 
