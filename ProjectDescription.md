@@ -56,7 +56,7 @@ Ongoing work in the [Cabana Group](https://cabana.chem.uic.edu/) at UIC has show
 
 ## Calculations ##
 
-For the Final Project, create a `M-surf` or `M-subsurf' folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)) in your `CBE544FinalProject` directory. For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
+For the Final Project, create a `M-surf` or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)) in your `CBE544FinalProject` directory. For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
 
 ```bash
 cd
@@ -66,6 +66,23 @@ tar -zxvf CBE544FinalProject.tar.gz
 cd CBE544FinalProject
 mkidr Ni-surf
 ```
+
+### Task 1: ### 
+
+Once you have accurately completed HW1 you can use your 104 surface to place a metal dopant on the surface and subsurface (separately, so two total calculations). Using these models adsorb EC to the three locations shown below:
+
+
+Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the metal dopant. 
+
+### Task 2: ### 
+
+For the systems you have run submit the badercharge.py scripts (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you can attach the bader charge to each atom by using XXXX. Analyze how the bader charges differ from each system. 
+
+### Task 3: ###
+
+Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. Use the sites clearly depicted below to see where to adosrb the EC. 
+
+Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page. Look for trends between these systems, your own system, and even those of your classmates (if possible)
 
 ## Analysis ##
 
