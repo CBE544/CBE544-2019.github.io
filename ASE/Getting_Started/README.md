@@ -207,22 +207,16 @@ module load ase/3.13.0
 python build-surface.py
 ```
 The resuting LiCoO2-104.traj should look something like this:
+<center><img src="Images/104-surface.png" alt="window" style="width: 600px;"/><br></center>
 
-![104 Surface of LiCoO2](Images/104-surface.png)
 
 We need to finish building our surface by repeating it in the y direction and constraining the bottom 3 layers. We can do this in ASE-GUI. Open the file (`ase-gui LiCoO2-104.traj` or `ag LiCoO2-104.traj`) and use the Edit -> Repeat to repeat the unit cell 4 times in the y direction. Once it has repeated click the set unit cell button. Now we must constrain the bottom three layers of our LiCoO<sub>2</sub>. To do this select the atoms in the bottom three layers of our slab and go to Tools -> Constratints -> Constrain Selected Atoms. It is easy to tell which Li and Co are in the bottoms 3 layers but the Oxygen atoms may be confusing. Use the Figures below for reference to  constrain the correct rows of atoms. 
 
-<center><img src="Images/04-surface-y1.png" alt="window" style="width: 800px;"/><br>
+<center><img src="Images/04-surface-y1.png" alt="window" style="width: 600px;"/><br>
 Nanocrystals from the Cabana Group
-<center><img src="Images/104-surface-x.png" alt="window" style="width: 800px;"/><br>
-Nanocrystals from the Cabana Group
-<center><img src="Images/104-surface-y2.png" alt="window" style="width: 800px;"/><br>
+<img src="Images/104-surface-x.png" alt="window" style="width: 600px;"/><br>
+Nanocrystals from the Cabana Group><img src="Images/104-surface-y2.png" alt="window" style="width: 600px;"/><br>
 </center>
-
-![104 Surface Repeated with constraints-x](Images/104-surface-y1.png)
-![104 Surface Repeated with constraints-x](Images/104-surface-x.png)
-![104 Surface Repeated with constraints-x](Images/104-surface-y2.png)
-
 
 Once it has been repeated and constrained save this atoms object by File -> Save and name your file in the line as surface.traj. Copy this trajectory file to the relax directory. Next move into the relax directory and take a look at the `relax.py` script discussed previously. Please be sure that the relax script is reading in the proper trajecotry files. You will be using this script for running the surface optimization calculations. Submit the calcualtion using the vasp-ase.sub script and be sure to change the file name accordingly.
 
