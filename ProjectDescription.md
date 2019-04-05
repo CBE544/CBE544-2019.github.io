@@ -69,23 +69,8 @@ mkidr Ni-surf
 
 ## Analysis ##
 
-## Final Report ##
 
-The final report should be in the form of a 3-5 pages long mini paper including figures and tables. One report for each group. Please be succinct and organize it in the following way:
-
-* Introduction (brief) - don't write too much
-* Calculation details
-* Results and discussion
-* Conclusion (brief)
-
-You are welcome to share data amongst your peers to discuss broader trends. 
-
-**If you need the energy of the fixed clusters, they are available [here](../Fixed_Lattice_Clusters/energies.txt).**
-
-<a name='grading'></a>
-
-
-## Requirements ##
+# Requirements #
 
 At a minimum you should accomplish the following:
 
@@ -98,4 +83,16 @@ At a minimum you should accomplish the following:
     2. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption?
 6. Report (3~5 pages maximum)
 
+# Final Report #
+
+The final report should be in the form of a 3-5 pages long mini paper including figures and tables. Provide one report for each group. Please be succinct and organize it in the following way:
+
+Introduction (brief) - don’t write too much
+Calculation details
+Results and discussion including analysis.
+Conclusion (brief)
+
+You are welcome to share data amongst your peers to discuss broader trends. 
+
+## 
 ##
