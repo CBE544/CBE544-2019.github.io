@@ -75,11 +75,78 @@ mkidr Ni-surf
 Once you have accurately completed HW1 you can use your 104 surface to place a metal dopant on the surface and subsurface (separately, so two total calculations). Using these models adsorb EC to the three locations shown below:
 
 
-Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the metal dopant. 
+Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the EC adsorbate. 
 
 ### Task 2: ### 
 
-For the systems you have run submit the badercharge.py scripts (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you can attach the bader charge to each atom by using XXXX. Analyze how the bader charges differ from each system. 
+Once you have converged both the systems with and without EC we can begin to do a bader charge analysis. Inside the directory where your calculations were run make a new directory called bader (by doing `mkdir bader`). Copy into this directory  fin.traj and vasp-ase.sub. Copy from the FinalProject directory the badercharge.py script. It will look like this:
+
+```python
+#!/usr/bin/env python
+from ase import Atoms, Atom
+from ase.calculators.vasp import Vasp
+from ase.io import read,write
+import numpy as np
+
+p=read('init.traj')
+calc = Vasp(prec='accurate',
+            encut=520,
+            xc='PBE',
+            lreal='Auto',
+            kpts=[4,4,1],
+            nsw = 0,
+            ibrion = -1,
+            ispin = 2,
+            amix_mag = 0.800000,
+            bmix = 0.000100,
+            bmix_mag= 0.000100,
+            amix = 0.20000,
+            sigma = 0.05000,
+            ediff = 2.00e-04,
+            ediffg = -2.00e-02,
+            algo ='fast',
+            ismear = -5,
+            nelm = 250,
+            ncore = 16,
+            lasph= True,
+            ldautype = 2,
+            lmaxmix = 4,
+            lorbit = 11,
+            ldau = True,
+            ldauprint = 2,
+            ldau_luj={'Co':{'L':2, 'U':3.32, 'J':0},
+                      'Li':{'L':-1, 'U':0.0, 'J':0.0},
+                      'O':{'L':-1, 'U':0.0, 'J':0.0}
+                      },
+            lvtot = False,
+            lwave = False,
+            lcharg = True,
+	    laechg= True,
+	    gamma=True,
+)
+calc.calculation_required = lambda x, y: True
+p.set_calculator(calc)
+pe=p.get_potential_energy()
+#####
+ana =  Vasp(restart=True)
+pend = ana.get_atoms()
+
+forces=pend.get_forces().ravel()
+max_force=max([abs(x) for x in forces])
+
+pe = pend.get_potential_energy()
+#mag = pend.get_magnetic_moments()
+
+#pend.set_initial_magnetic_moments(mag)
+#print mag
+write('fin.traj',pend)
+```
+This script does a static calculation (nsw=0) of the final trajectory from your previous relaxation and writes the files needed to do a bader charge anaylsis. Use the vasp-ase.sub script to submit the badercharge.py script (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you can attach the bader charge to each atom by typing
+
+```python
+python ~/FinalProject/bader_get_charge_vasp
+```
+This while write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. 
 
 ### Task 3: ###
 
