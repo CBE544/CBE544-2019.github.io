@@ -45,8 +45,12 @@ write('init.traj',p)
 ```
 Once we have change the adsorption location and adsorption mol index we can run this script by `python add_ads.py` and we should generate a new trajectory called init.traj. This is going to be out initial trajecotry for our DFT calculation and should like something like this:
 
+<center><img src="../Images/ECads.png" alt="window" style="width: 600px;"/><br>
+  Example of LiCoO<sub>2</sub> with an EC adsorbed
 
-
+<img src="../Images/ECads-side.png" alt="window" style="width: 600px;"/><br>
+  Example of LiCoO<sub>2</sub> with an EC adsorbed
+</center>
 
 From here we can use our vasp-ase.sub script and opt-ads.py script to submit our job. (Change to final line in vasp-ase.sub to read python opt-ads.py and then submit through sbatch vasp-ase.sub). The resulting energy of this calculation is the E<sub>surface + EC*</sub> in the equation at the top of the page. You should already know E<sub>surface</sub> from your previous calculation and use E<sub>EC</sub> provided to get the adsorption energy. 
 
@@ -55,6 +59,18 @@ From here we can use our vasp-ase.sub script and opt-ads.py script to submit our
 ### Adsorption Sites ###
 
 Here are the adsorption sites that must be investigated for this project.
+ 
+<center><img src="../Images/Adsorptionlocations104.png" alt="window" style="width: 800px;"/><br>
+Adsorbtion sites for 104 surface
+</center>
+
+<center><img src="../Images/Adsorptionlocations001-Coterm.png" alt="window" style="width: 800px;"/><br>
+Adsorbtion sites for 001 Co-terminated surface
+</center>
+
+<center><img src="../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
+Adsorbtion sites for 001 Li terminated surface
+</center>
 
 
 
