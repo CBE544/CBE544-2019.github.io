@@ -4,7 +4,7 @@ mathjax: true
 permalink: /Project/
 ---
 
-## Course Project 
+## Course Project ##
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
@@ -78,15 +78,16 @@ Once you have accurately completed HW1 you can use your 104 surface to place a m
 Nanocrystals from the Cabana Group
 </center>
 
-<center><img src="../Images/Adsorptionlocations104.png" alt="window" style="width: 800px;"/><br>
-Locations for Dopants in LiCoO<sub>2</sub>
-</center>
+
 
 Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script submit the job. Record the final energies which can be used to determine if the preferred dopant location is surface or subsurface.
 
 ### Task 2: ### 
 Using these models from Task 1 we can now adsorb EC to the three locations (per system) shown below:
 
+<center><img src="../Images/Adsorptionlocations104.png" alt="window" style="width: 800px;"/><br>
+Locations for Dopants in LiCoO<sub>2</sub>
+</center>
 
 Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the EC adsorbate. 
 
