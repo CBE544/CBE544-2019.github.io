@@ -11,67 +11,37 @@ permalink: /ASE/Adsorption/
 
 ____
 
-## Adsorption on MXenes ##
+## Adsorption on LiCoO<sub>2</sub> ##
 
-In the second exercise, you will be calculating the adsorption energy of a N on the Ti<sub>2</sub>C surface and determining what the most favorable adsorption site is. The adsorption energy is defined as:
+In the second exercise, you will be calculating the adsorption energy of a EC on the LiCoO<sub>2</sub>C surface and determining what the most favorable adsorption site is. The adsorption energy is defined as:
 <div>
 
 $$
-\Delta E_\mathrm{ads} = E_\mathrm{surface + N*}  - E_\mathrm{surface} - E_\mathrm{N}
+\Delta E_\mathrm{ads} = E_\mathrm{surface + EC*}  - E_\mathrm{surface} - E_\mathrm{EC}
 $$
 
 </div>
 
-where N* refers to adsorbed N. We have *E*<sub>surface</sub> from the previous exercise (the total energy of the previous slab x 4, since we will soon be doubling the cell in the x and y directions), so we will need to calculate *E*<sub>surface + N*</sub>. The energy of E<sub>N</sub> is -278.275 eV (we will talk about where this energy came from in the Final Project).
+where EC* refers to adsorbed EC. We have *E*<sub>surface</sub> from the previous exercise (the total energy of the previous slab so we will need to calculate *E*<sub>surface + N*</sub>. The energy of E<sub>EC</sub> is -61.73764249 eV which comes from a calculation that was previously done.
 
 <a name='adsorption-sites'></a>
 
 ### Adsorption Sites ###
 
-Take a look [here](http://CBE544.github.io/ASE/#ase-gui) if you need a reminder of how to add atoms using `ase-gui`. We will describe how to add atoms within the ASE script below.
+### Python Script to add Adsorbate ###
+Here is the python script we will use to add an adsorbate to our surface. The important aspects of this script are that is reads in two files: bare.traj and EC.traj. EC.traj has been provided to you in the FinalProject directory. The bare.traj is going to be the surface you have constructed in your previous calculations. So in order to build this surface you must copy the fin.traj from Task 1 to the directory where you plan to run the adsorption DFT calculation. Also copy in EC.traj and the script you will need to submit your job (vasp-ase.sub and opt-ads.py). Next rename the fin.traj to bare.traj. In order to adsorb to the specified sites you must get the position of the atoms on the LiCoO<sub>2</sub> surface and alter the position=(XX,XX) accordingly. Next we need to specify the mol index of the atom we want to adsorb to this site so we will change mol_index = "INDEX of O atom in EC trajectory". This can be found by looking at the EC adsorbate through ASE.
 
-First, open the .traj file with the optimized lattice constant that you obtained from the previous exercise. On the menu bar, select View -> Repeat. Under 'Repeat Atoms', change the first two numbers from 1 to 2; leave the third number as 1. Then, click set unit cell. Your cell should look like this:
+```python
+#!/usr/bin/env python
 
-<center><img src="doubled.png" alt="window" style="width: 400px;"/><br>
-2 x 2 surface of Ti<sub>2</sub>C
-</center>
+from ase import Atoms, Atom
+from ase.calculators.vasp import Vasp
+from ase.io import read,write
+from ase.build import add_adsorbate,molecule
 
-There are four possible adsorption sites on a two-dimensional MXene surface that an adsorbate can bind to: the fcc, hcp, ontop, and bridge sites. These are illustrated below:
-
-<center><img src="overhead.png" alt="window" style="width: 400px;"/><br>
-2 x 2 surface of Ti<sub>2</sub>C
-</center>
-
-In the `ase-gui`, click the atom above where the adsorbate will sit, press `Ctrl + A`, then specify the adsorbate and the vertical distance above the site. You can also hold `Ctrl` to select multiple atoms and add an adsorbate, which will be at the center of all the selected atoms. You can move the atoms by selecting the atom(s) you wish to move, press `Ctrl + M`, and use the arrow keys to move the atom(s); press `Ctrl + M` again to deselect the atom(s) for moving. In the following figure, we illustrate the placement of N on the ontop site:
-
-<center><img src="N_ontop.png" alt="window" style="width: 400px;"/><br>
-ontop N on Ti<sub>2</sub>C
-</center>
-
-Make sure to save the new .traj file via `Ctrl + S`.
-
-To relax these atoms, use the `Relax.py`script. Read the script to make sure you understand what it does. (Note: In the calculator the k-point mesh is now (4x4x1) instead of the (8x8x1) we were using in the previous steps. Why?) The output should look like this:
+p=read('bare.traj')
+EC =read('EC.traj')
+add_adsorbate (p, h2o, height = 1, position = (3.429,22.484),mol_index=20)
+write('init.traj',p)
 ```
-BFGS:   0  20:33:56   -13667.108639 136.3606
-BFGS:   1  20:38:43   -13675.857635  89.5080
-BFGS:   2  20:42:59   -13680.647385	 65.7332
-BFGS:   3  20:47:11   -13683.809679	 50.8884
-BFGS:   4  20:51:23   -13686.061782	 40.5300
-BFGS:   5  20:56:10   -13687.682598	 32.9905
-BFGS:   6  21:00:24   -13688.838033	 27.4382
-BFGS:   7  21:04:32   -13689.679245	 23.2174
-BFGS:   8  21:08:41   -13690.323083	 19.8317
-BFGS:   9  21:12:45   -13690.839507	 16.9859
-BFGS:  10  21:16:48   -13691.266948	 14.5243
-BFGS:  11  21:20:36   -13691.626984	 12.3675
-BFGS:  12  21:24:20   -13691.933360	 10.4735
-....
-```
-
-The first column tells us we are using a Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm to optimize the atomic positions. The second column is the step number (the first step before we move atoms at all is 0). The third column tells us the time each ionic step is calculated, the fourth column is the total energy of the system (eV), and the last column is the maximum force on an atom (eV/Å).
-
-It is possible that the system does not finish relaxing in the time given to it by the scheduler. If this happens, simply copy the .traj created by the script (in this case, Relax.traj) to the original .traj file name. When the script reads the .traj file, if there are multiple atomic configurations in the file, it will read the last one by default. In this way, you can run the script from before and start where the previous calculation left off.
-
-**HW 5:** Using the `Relax.py` script, calculate the E<sub>ads</sub> for N in each of the four adsorption sites. List each E<sub>ads</sub>, and say which is the most stable site.
-
-Note: All sites may not be stable (the adsorbed N may move to a different site). If it is clear that the atom is relaxing away from the initial site, you do not need to run the calculation any further if you run out of time; simply state that the position is unstable.
+Once we have change the adsorption location and adsorption mol index we can run this script by `python add_ads.py` and we should generate a new trajectory called init.traj. This is going to be out initial trajecotry for our DFT calculation. From here we can use our vasp-ase.sub script and opt-ads.py script to submit our job. (Change to final line in vasp-ase.sub to read python opt-ads.py and then submit through sbatch vasp-ase.sub). The resulting energy of this calculation is the E_\mathrm{surface + EC*} in the equation at the top of the page. You should already know E_\mathrm{surface} from your previous calculation and use E_\mathrm{EC} provided to get the adsorption energy. 
