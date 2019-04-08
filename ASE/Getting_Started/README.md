@@ -185,7 +185,7 @@ The first thing that should be done here is the resize our bulk LiCoO<sub>2</sub
 
 This should create a file called `LiCoO2-bulk-opt.traj`. This is what we will use to make the surface and test the kpoints. 
 
-Next, we will determine how well-converged the total energy is with respect to the number of k-points in each direction. You will be running the kptconv.py script in the k-points folder. Look through the script to understand what its doing. Run this script by submitting a job to an external node as discussed previously. Remember to change the name of the script to execute, in the spede_esp.sub file. Upon completion, the script outputs a convergence plot and prints the total energies as a function of the k-points used in the calculation.
+Next, we will determine how well-converged the total energy is with respect to the number of k-points in each direction. You will be running the kptconv.py script in the k-points folder. Look through the script to understand what its doing. Run this script by submitting a job to an external node as discussed previously. Remember to change the name of the script to execute, in the vasp-ase.sub file. Upon completion, the script outputs a convergence plot and prints the total energies as a function of the k-points used in the calculation.
 
 Note: There is a typo in the kpointconv.py script. It should read in LiCoO2-bulk-opt.traj. Please fix this before submission.
 
