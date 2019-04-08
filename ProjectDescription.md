@@ -89,7 +89,7 @@ Using these models from Task 1 we can now adsorb EC to the three locations (per 
 Locations for Adsorption on the 104 surface of LiCoO<sub>2</sub>
 </center>
 
-Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the EC adsorbate. 
+Refer to the [Adsorption page](../ASE/Adsorption) for instructions on how to add the EC adsorbate. 
 
 ### Task 3: ### 
 
@@ -171,8 +171,6 @@ Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instea
 <center><img src="../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
 </center>
 
-
-
 Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page. Look for trends between these systems, your own system, and even those of your classmates (if possible)
 
 ## Analysis ##
@@ -182,7 +180,7 @@ Run a bader charge analysis on this system as well. See if there are any clear t
 
 At a minimum you should accomplish the following:
 
-1. Complete the [three exercises](../ASE/Getting_Started).
+1. Complete the HW5(../ASE/Getting_Started).
 2. Setup a LiCoO<sub>2</sub> surface (104) and calculate adsorption energies for EC adsorption as three sites for two different metal dopant locations (surface and sub-surface).
 3. Do a Bader Charge Analysis on metal doped system and metal doped system w/ EC and compare to the provided systems without and dopant and with an Al dopant.
 4. Repeat this process on the 001 facet. Instead of doing is for surface and subsurface we will do this for Li-terminated and CoO<sub>2</sub> terminated. 
