@@ -4,7 +4,7 @@ mathjax: true
 permalink: /Project/
 ---
 
-## Course Project ##
+## Course Project 
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
