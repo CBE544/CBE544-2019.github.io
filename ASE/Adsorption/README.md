@@ -60,15 +60,15 @@ From here we can use our vasp-ase.sub script and opt-ads.py script to submit our
 
 Here are the adsorption sites that must be investigated for this project.
  
-<center><img src="../Images/Adsorptionlocations104.png" alt="window" style="width: 800px;"/><br>
+<center><img src="../../../Images/Adsorptionlocations104.png" alt="window" style="width: 800px;"/><br>
 Adsorbtion sites for 104 surface
 </center>
 
-<center><img src="../Images/Adsorptionlocations001-Coterm.png" alt="window" style="width: 800px;"/><br>
+<center><img src="../../../Images/Adsorptionlocations001-Coterm.png" alt="window" style="width: 800px;"/><br>
 Adsorbtion sites for 001 Co-terminated surface
 </center>
 
-<center><img src="../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
+<center><img src="../../../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
 Adsorbtion sites for 001 Li terminated surface
 </center>
 
