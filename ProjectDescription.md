@@ -180,7 +180,7 @@ Run a bader charge analysis on this system as well. See if there are any clear t
 
 At a minimum you should accomplish the following:
 
-1. Complete the HW5(../ASE/Getting_Started).
+1. Complete the [HW5](../ASE/Getting_Started).
 2. Setup a LiCoO<sub>2</sub> surface (104) and calculate adsorption energies for EC adsorption as three sites for two different metal dopant locations (surface and sub-surface).
 3. Do a Bader Charge Analysis on metal doped system and metal doped system w/ EC and compare to the provided systems without and dopant and with an Al dopant.
 4. Repeat this process on the 001 facet. Instead of doing is for surface and subsurface we will do this for Li-terminated and CoO<sub>2</sub> terminated. 
