@@ -8,7 +8,7 @@ permalink: /Project/
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
-4. [Analysis](#analysis)
+4. [Analysis](#analysis)<br>
 	4a. [LiCoO<sub>2</sub> and Al-doped Data](/CompData)
 5. [Final Report](#report)
 
@@ -247,6 +247,8 @@ At a minimum you should accomplish the following:
     2. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption?
 6. Report (3~5 pages maximum)
 
+
+<a name='report></a>
 ### Final Report ###
 
 The final report should be in the form of a 3-5 pages long mini paper including figures and tables. Provide one report for each group. Please be succinct and organize it in the following way:
