@@ -48,7 +48,7 @@ Once we have change the adsorption location and adsorption mol index we can run 
 <center><img src="ECads.png" alt="window" style="width: 600px;"/><br>
   Example of LiCoO<sub>2</sub> with an EC adsorbed
 
-<img src="ECads-side.png" alt="window" style="width: 600px;"/><br>
+<img src="Ecads-side.png" alt="window" style="width: 600px;"/><br>
   Example of LiCoO<sub>2</sub> with an EC adsorbed
 </center>
 
