@@ -4,11 +4,12 @@ mathjax: true
 permalink: /Project/
 ---
 
-## Course Project ##
+## Course Project 
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
 4. [Analysis](#analysis)
+	4a. [LiCoO<sub>2</sub> and Al-doped Data](/CompData)
 5. [Final Report](#report)
 
 
@@ -110,13 +111,13 @@ This is an outline of all of the DFT calculations you will need to do, how to or
 ```
 
 #### A note on Magnetism ###
-The calculations are spin polarized and therefore the atoms contain non-zero magnetic moments. In order to view these magnetic moments, which is important for consistent calculations, you can open the final trajectory in ase-gui -> View -> Show Labels -> Magnetic Moments. The problem here is the the ase-gui for ase/3.13.0 does not do a good job with making the magnetic moments readable in the image BUT ase/3.9.1 does a good job at this. The problem is we cannot open trajecotry files made in ase/3.13.0 in ase/3.9.1 so we must convert the file. We can do this using the switch.py script. Move into the direcotry where you wish to write the final trajectory to an ase/3.9.1 trajectory file and run these commands:
+These calculations are spin polarized and therefore the atoms contain non-zero magnetic moments. In order to view these magnetic moments, which are important for consistent calculations, you can open the final trajectory in ase-gui -> View -> Show Labels -> Magnetic Moments. The problem here is the the ase-gui for ase/3.13.0 does not do a good job with making the magnetic moments readable in the image BUT ase/3.9.1 does. This is further complicated by the fact that we cannot open trajecotry files made in ase/3.13.0 in ase/3.9.1 so we must convert the file format. We can do this using the switch.py script. Specifically, move into the direcotry where you wish to write the final trajectory to an ase/3.9.1 trajectory file and run these commands:
 
 ```bash
 module load ase/3.9.1
 python ~/CBE544/FinalProject/switch.py
 ```
-This will write a file called `mag.traj` which will be openable in ase/3.9.1 and contain the structure and magnetic moments from your caclulation. When presenting structures please include the magnetic moments in your images.
+This will write a file called `mag.traj` which will be openable in ase/3.9.1 and contain the structure and magnetic moments from your caclulation. When presenting structures please include the magnetic moments in your images. This script only works for final trajectories and not for bader charges files.
 
 ### Task 1: ### 
 
@@ -205,9 +206,10 @@ write('fin.traj',pend)
 This script does a static calculation (nsw=0) of the final trajectory from your previous relaxation and writes the files needed to do a bader charge anaylsis. Use the vasp-ase.sub script to submit the badercharge.py script (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you can attach the bader charge to each atom by typing
 
 ```python
+module load ase/3.9.1
 python ~/CBE544/FinalProject/bader_get_charge_vasp
 ```
-This while write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. 
+This while write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. It is important to load ase/3.9.1 so that the magnetic moments are readable.
 
 ### Task 4: ###
 
@@ -229,6 +231,8 @@ Run a bader charge analysis on this system as well. See if there are any clear t
 4. Final Paper: Wed 8 May by 5 PM (1 per group)
 
 ## Analysis ##
+
+Do an detailed analysis of your system trying to identifty trends in adsorption due to dopant location, charge, surface, or anything else. Compare your data to that of plain LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2</sub> which can be found [here](/CompData).
 
 ### Requirements ###
 
