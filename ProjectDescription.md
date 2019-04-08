@@ -22,9 +22,7 @@ Turn in your final report by emailing a PDF file to:
 alevoj@seas.upenn.edu, antcurto@seas.upenn.edu
 ```
 
-<a name='intro'></a>
-
- ## Introduction ##
+ ### Introduction ###
 
 Goal: Understand how different metal dopants affect the structure and reactivity of LiCoO2 specifically through the adsorption of ethylene carbonate (EC).
 
