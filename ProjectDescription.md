@@ -90,6 +90,7 @@ Organization for the project is very important so that the data is accesbile onc
 ```
 This is an outline of all of the DFT calculations you will need to do, how to organize the files, and where to run each calculation. For the 001 surface it should be something like this:
 
+```bash
 ~/CBE544/FinalProject/001/CoTerm/noads/
 ~/CBE544/FinalProject/001/CoTerm/ads1/
 ~/CBE544/FinalProject/001/CoTerm/ads2/
@@ -106,11 +107,20 @@ This is an outline of all of the DFT calculations you will need to do, how to or
 ~/CBE544/FinalProject/001/Literm/ads1/bader
 ~/CBE544/FinalProject/001/Literm/ads2/bader
 ~/CBE544/FinalProject/091/Literm/ads3/bader
+```
 
+#### A note on Magnetism ###
+The calculations are spin polarized and therefore the atoms contain non-zero magnetic moments. In order to view these magnetic moments, which is important for consistent calculations, you can open the final trajectory in ase-gui -> View -> Show Labels -> Magnetic Moments. The problem here is the the ase-gui for ase/3.13.0 does not do a good job with making the magnetic moments readable in the image BUT ase/3.9.1 does a good job at this. The problem is we cannot open trajecotry files made in ase/3.13.0 in ase/3.9.1 so we must convert the file. We can do this using the switch.py script. Move into the direcotry where you wish to write the final trajectory to an ase/3.9.1 trajectory file and run these commands:
+
+```bash
+module load ase/3.9.1
+python ~/CBE544/FinalProject/switch.py
+```
+This will write a file called `mag.traj` which will be openable in ase/3.9.1 and contain the structure and magnetic moments from your caclulation. When presenting structures please include the magnetic moments in your images.
 
 ### Task 1: ### 
 
-Once you have accurately completed HW1 you can use your 104 surface to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
+Once you have accurately completed HW5 you can continue on to the final project. We will use the 104 surface and 001 surface trajectories provided to you in the FinalProject directory (this is only because there are specific starting magnetic strcutrures that we want otherwise the structures that you made could easily be used) to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
 
 <center><img src="../Images/dopantlocations.png" alt="window" style="width: 800px;"/><br>
 Nanocrystals from the Cabana Group
