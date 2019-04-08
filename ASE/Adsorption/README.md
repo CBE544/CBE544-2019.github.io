@@ -45,10 +45,10 @@ write('init.traj',p)
 ```
 Once we have change the adsorption location and adsorption mol index we can run this script by `python add_ads.py` and we should generate a new trajectory called init.traj. This is going to be out initial trajecotry for our DFT calculation and should like something like this:
 
-<center><img src="../ECads.png" alt="window" style="width: 600px;"/><br>
+<center><img src="ECads.png" alt="window" style="width: 600px;"/><br>
   Example of LiCoO<sub>2</sub> with an EC adsorbed
 
-<img src="../ECads-side.png" alt="window" style="width: 600px;"/><br>
+<img src="ECads-side.png" alt="window" style="width: 600px;"/><br>
   Example of LiCoO<sub>2</sub> with an EC adsorbed
 </center>
 
