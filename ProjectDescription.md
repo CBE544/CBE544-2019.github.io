@@ -167,10 +167,8 @@ This while write a new trajectory file called bader_charge.traj that has attache
 Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. Use the sites clearly depicted below to see where to adosrb the EC. 
 
 <center><img src="../Images/Adsorptionlocations001-Coterm.png" alt="window" style="width: 800px;"/><br>
-Locations for Adsorption on the Cobalt Terminated 001 surface of LiCoO<sub>2</sub>
 </center>
 <center><img src="../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
-Locations for Adsorption on the Lithium Terminated 001 surface of LiCoO<sub>2</sub>
 </center>
 
 
