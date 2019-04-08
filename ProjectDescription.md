@@ -4,7 +4,7 @@ mathjax: true
 permalink: /Project/
 ---
 
-## Course Project 
+## Course Project ##
 1. [Introduction](#intro)
 2. [Deadlines](#deadlines)
 3. [Calculations](#calcs)
@@ -12,7 +12,7 @@ permalink: /Project/
 5. [Final Report](#report)
 
 
-For the Final Project, you will be studying ethylene carbonate adosrption on Lithium Cobalt Oxide (LiCoO<sub>2</sub>) with different dopant metals. Each group will be assigned a metal dopant to work with (see list of Assigned Projects). The students will work in groups of two or three on the same MXene to perform calculations individually, however, complementing each other. Each pair of students will present their results in class that will be critiqued by another group of two. Finally, each group  will jointly write a final report on the combined data. The due date for the final written report is <font color="red">5/8 at 5:00 PM (hard deadline)</font>.
+For the Final Project, you will be studying ethylene carbonate adosrption on Lithium Cobalt Oxide (LiCoO<sub>2</sub>) with different dopant metals. Each group will be assigned a metal dopant to work with (see list of Assigned Projects). The students will work in groups of two or three on the same dopant to perform calculations individually, however, complementing each other. Each pair of students will present their results in class that will be critiqued by the other groups. Finally, each group  will jointly write a final report on the combined data. The due date for the final written report is <font color="red">5/8 at 5:00 PM (hard deadline)</font>.
 
 Please make use of the [Piazza](https://piazza.com/) page for troubleshooting, discussions and for sharing results.
 
@@ -21,8 +21,9 @@ Turn in your final report by emailing a PDF file to:
 ```
 alevoj@seas.upenn.edu, antcurto@seas.upenn.edu
 ```
+<a name='intro'></a>
 
- ## Introduction ##
+## Introduction ##
 
 Goal: Understand how different metal dopants affect the structure and reactivity of LiCoO2 specifically through the adsorption of ethylene carbonate (EC).
 
@@ -30,7 +31,7 @@ Plan: Use DFT to study dopant effects on structure and changes it causes to EC a
 
 ### Motivation ###
 
-LiMO2 (M= Co, Mn, Ni are the most common cathode materials in batteries today. LiCoO2 is by far the most popular of those materials. A combination of effects has lead to investigations to improve the stability of LiCoO2 cathode materials or find suitable alternatives. Some problematic effects include cost, reactivity, structural problems. Decomposition of the liquid electrolyte is a common cause of decreased battery performance. Ethylene carbonate is a popular component of the elctrolyte solution in Li ion batteries. In order to improve battery performance critical importance in improving battery operation is understanding the electrode – electrolyte interface. For high capacity battery materials, electrolytes decomposed causing the battery to decrease in performance. 
+LiMO<sub>2</sub> (M= Co, Mn, Ni) materials are the most common cathode materials in batteries today. LiCoO2 is by far the most popular of those materials. A combination of effects has lead to investigations to improve the stability of LiCoO2 cathode materials or find suitable alternatives. Some problems include cost, reactivity, and structural problems that occur during cycling. Decomposition of the liquid electrolyte is a common cause of decreased battery performance. Ethylene carbonate is a popular component of the elctrolyte solution in Li ion batteries. In order to improve battery performance critical importance in improving battery operation is understanding the electrode – electrolyte interface. For high capacity battery materials, electrolytes decomposed causing the battery to decrease in performance. 
 
 <center><img src="../Images/LiIonBatteries.png" alt="window" style="width: 800px;"/><br>
 Schematic of Li Ion Batteries
@@ -39,34 +40,73 @@ Schematic of Li Ion Batteries
 
 AIP Conference Proceedings 1597, 26 (2014); https://doi.org/10.1063/1.4878478 Published Online: 17 February 2015
 
-Ongoing work in the [Cabana Group](https://cabana.chem.uic.edu/) at UIC has shown that some metal dopants, specifically Al in LiCoO<sub>2</sub> can increase the lifetime of the batteries. Well defined nanocrystals of LiCoO<sub>2</sub> can be synthesized and subsequnetly test for battery performance. The Figure below shows a schematic of the nanocrystals synthesized at UIC. With this information we can model the individual facets of the nanocrystal and study the effect on EC adsorption metal dopants will have in each region. 
+Ongoing work in the [Cabana Group](https://cabana.chem.uic.edu/) at UIC has shown that some metal dopants, specifically Al in LiCoO<sub>2</sub> can increase the lifetime of the batteries. Well defined nanocrystals of LiCoO<sub>2</sub> can be synthesized and subsequnetly tested for battery performance. The figure below shows a schematic of the nanocrystals synthesized at UIC. With this information we can model the individual facets of the nanocrystal and study the effect on EC adsorption metal dopants will have in each region. 
 
 <center><img src="../Images/nanocrytals.png" alt="window" style="width: 800px;"/><br>
 Nanocrystals from the Cabana Group
 </center>
 
-<a name='deadlines'></a>
-
-## Deadlines ##
-1. HW5 Due: Wed 10 April (Each student)
-2. Short update (few slides) on completed calcualtions: Wed 17 April during class (per group)
-3. Final Presentation: Wed 1 May during class (per group)
-4. Final Paper: Wed 8 May by 5 PM (per group)
 
 <a name='calcs'></a>
 
 ## Calculations ##
 
-For the Final Project, create a `M-surf` or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)) in your `CBE544FinalProject` directory. For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
+To get started we need to get the files needed for the final project. Move into your CBE544 directory and run these commands:
 
 ```bash
 cd
 cd CBE544
 wget XXXX
 tar -zxvf FinalProject.tar.gz
+
+```
+
+In the FinalProject directory you should see some trajectory files and a directory called scripts which will be used for this project. In `FinalProject` directory create a `M-surf` and/or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)). For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
+
+```bash
 cd FinalProject
 mkidr Ni-surf
 ```
+
+Organization for the project is very important so that the data is accesbile once the class is over. We will structure is to be something like this for the 104 surface
+
+```bash
+~/CBE544/FinalProject/104/M-surf/noads/
+~/CBE544/FinalProject/104/M-surf/ads1/
+~/CBE544/FinalProject/104/M-surf/ads2/
+~/CBE544/FinalProject/104/M-surf/ads3/
+~/CBE544/FinalProject/104/M-surf/clean/bader
+~/CBE544/FinalProject/104/M-surf/ads1/bader
+~/CBE544/FinalProject/104/M-surf/ads2/bader
+~/CBE544/FinalProject/104/M-surf/ads3/bader
+~/CBE544/FinalProject/104/M-sub/noads/
+~/CBE544/FinalProject/104/M-sub/ads1/
+~/CBE544/FinalProject/104/M-sub/ads2/
+~/CBE544/FinalProject/104/M-sub/ads3/
+~/CBE544/FinalProject/104/M-sub/clean/bader
+~/CBE544/FinalProject/104/M-sub/ads1/bader
+~/CBE544/FinalProject/104/M-sub/ads2/bader
+~/CBE544/FinalProject/104/M-sub/ads3/bader
+```
+This is an outline of all of the DFT calculations you will need to do, how to organize the files, and where to run each calculation. For the 001 surface it should be something like this:
+
+~/CBE544/FinalProject/001/CoTerm/noads/
+~/CBE544/FinalProject/001/CoTerm/ads1/
+~/CBE544/FinalProject/001/CoTerm/ads2/
+~/CBE544/FinalProject/001/CoTerm/ads3/
+~/CBE544/FinalProject/001/CoTerm/clean/bader
+~/CBE544/FinalProject/001/CoTerm/ads1/bader
+~/CBE544/FinalProject/001/CoTerm/ads2/bader
+~/CBE544/FinalProject/001/CoTerm/ads3/bader
+~/CBE544/FinalProject/001/Literm/noads/
+~/CBE544/FinalProject/001/Literm/ads1/
+~/CBE544/FinalProject/001/Literm//ads2/
+~/CBE544/FinalProject/001/Literm/ads3/
+~/CBE544/FinalProject/001/Literm/noads/bader
+~/CBE544/FinalProject/001/Literm/ads1/bader
+~/CBE544/FinalProject/001/Literm/ads2/bader
+~/CBE544/FinalProject/091/Literm/ads3/bader
+
 
 ### Task 1: ### 
 
@@ -75,7 +115,6 @@ Once you have accurately completed HW1 you can use your 104 surface to place a m
 <center><img src="../Images/dopantlocations.png" alt="window" style="width: 800px;"/><br>
 Nanocrystals from the Cabana Group
 </center>
-
 
 
 Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script submit the job. Record the final energies which can be used to determine if the preferred dopant location is surface or subsurface.
@@ -87,11 +126,11 @@ Using these models from Task 1 we can now adsorb EC to the three locations (per 
 Locations for Adsorption on the 104 surface of LiCoO<sub>2</sub>
 </center>
 
-Refer to the [Adsorption page](../ASE/Adsorption) for instructions on how to add the EC adsorbate. 
+Refer to the [Adsorption page](../ASE/Adsorption) for instructions on how to add the EC adsorbate. We will use a different script than the relax.py for adsorption calculation. We will use the script called relax-ads.py which you can find in `FinalProject/scripts`. Please be sure to use this script for these calculations or you may expereince converngence issues. 
 
 ### Task 3: ### 
 
-Once you have converged the systems with and without EC we can do a [bader charge analysis](http://theory.cm.utexas.edu/henkelman/code/bader/).  Inside the directory where your calculations were run make a new directory called bader (by doing `mkdir bader`). Copy into this directory  fin.traj and vasp-ase.sub. Rename your fin.traj to init.traj (`mv fin.traj init.traj`). Copy from the FinalProject/scripts directory the badercharge.py script. It will look like this:
+Once you have converged the systems with and without EC we will do a [bader charge analysis](http://theory.cm.utexas.edu/henkelman/code/bader/).  Inside the directory where your calculations were run make a new directory called bader (by doing `mkdir bader`). Copy into this directory  fin.traj and vasp-ase.sub. Rename your fin.traj to init.traj (`mv fin.traj init.traj`). Copy from the `FinalProject/scripts` directory the badercharge.py script. It will look like this:
 
 ```python
 #!/usr/bin/env python
@@ -156,13 +195,13 @@ write('fin.traj',pend)
 This script does a static calculation (nsw=0) of the final trajectory from your previous relaxation and writes the files needed to do a bader charge anaylsis. Use the vasp-ase.sub script to submit the badercharge.py script (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you can attach the bader charge to each atom by typing
 
 ```python
-python ~/FinalProject/bader_get_charge_vasp
+python ~/CBE544/FinalProject/bader_get_charge_vasp
 ```
 This while write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. 
 
 ### Task 4: ###
 
-Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. Use the sites clearly depicted below to see where to adosrb the EC. 
+Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. Use the sites clearly depicted below to see where to adosrb the EC in relationship to the metal dopant. The metal dopant in this system should always go in the layer of Co on the surface or closest to it (it will be the layer right under the lithium for the lithium terminated case).
 
 <center><img src="../Images/Adsorptionlocations001-Coterm.png" alt="window" style="width: 800px;"/><br>
 </center>
@@ -171,8 +210,15 @@ Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instea
 
 Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page. Look for trends between these systems, your own system, and even those of your classmates (if possible)
 
-## Analysis ##
+<a name='deadlines'></a>
 
+## Deadlines ##
+1. HW5 Due: Wed 10 April (Each student)
+2. Short update (few slides) on completed calcualtions: Wed 17 April during class (1 per group)
+3. Final Presentation: Wed 1 May during class (1 per group)
+4. Final Paper: Wed 8 May by 5 PM (1 per group)
+
+## Analysis ##
 
 ### Requirements ###
 
@@ -198,5 +244,5 @@ The final report should be in the form of a 3-5 pages long mini paper including 
 
 You are welcome to share data amongst your peers to discuss broader trends. 
 
-##
+
 
