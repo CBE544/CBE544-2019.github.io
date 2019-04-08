@@ -26,10 +26,9 @@ where EC* refers to adsorbed EC. We have *E*<sub>surface</sub> from the previous
 
 <a name='adsorption-sites'></a>
 
-### Adsorption Sites ###
 
 ### Python Script to add Adsorbate ###
-Here is the python script we will use to add an adsorbate to our surface. The important aspects of this script are that is reads in two files: bare.traj and EC.traj. EC.traj has been provided to you in the FinalProject directory. The bare.traj is going to be the surface you have constructed in your previous calculations. So in order to build this surface you must copy the fin.traj from Task 1 to the directory where you plan to run the adsorption DFT calculation. Also copy in EC.traj and the script you will need to submit your job (vasp-ase.sub and opt-ads.py). Next rename the fin.traj to bare.traj. In order to adsorb to the specified sites you must get the position of the atoms on the LiCoO<sub>2</sub> surface and alter the position=(XX,XX) accordingly. Next we need to specify the mol index of the atom we want to adsorb to this site so we will change mol_index = "INDEX of O atom in EC trajectory". This can be found by looking at the EC adsorbate through ASE.
+Here is the python script we will use to add an adsorbate to our surface. This script reads in two files: bare.traj and EC.traj. EC.traj has been provided to you in the FinalProject directory. The bare.traj is going to be the surface you have constructed in your previous calculations. So in order to build this surface you must copy the fin.traj from Task 1 to the directory where you plan to run the adsorption DFT calculation. Also copy in EC.traj and the script you will need to submit your job (vasp-ase.sub and opt-ads.py). Next rename the fin.traj to bare.traj. In order to adsorb to the specified sites you must get the position of the atoms on the LiCoO<sub>2</sub> surface and alter the position=(XX,XX) accordingly. Next we need to specify the mol index of the atom we want to adsorb to this site so we will change mol_index = "INDEX of O atom in EC trajectory". This can be found by looking at the EC adsorbate through ASE.
 
 ```python
 #!/usr/bin/env python
@@ -44,4 +43,18 @@ EC =read('EC.traj')
 add_adsorbate (p, h2o, height = 1, position = (3.429,22.484),mol_index=20)
 write('init.traj',p)
 ```
-Once we have change the adsorption location and adsorption mol index we can run this script by `python add_ads.py` and we should generate a new trajectory called init.traj. This is going to be out initial trajecotry for our DFT calculation. From here we can use our vasp-ase.sub script and opt-ads.py script to submit our job. (Change to final line in vasp-ase.sub to read python opt-ads.py and then submit through sbatch vasp-ase.sub). The resulting energy of this calculation is the E<sub>surface + EC*</sub> in the equation at the top of the page. You should already know E<sub>surface</sub> from your previous calculation and use E<sub>EC</sub> provided to get the adsorption energy. 
+Once we have change the adsorption location and adsorption mol index we can run this script by `python add_ads.py` and we should generate a new trajectory called init.traj. This is going to be out initial trajecotry for our DFT calculation and should like something like this:
+
+
+
+
+From here we can use our vasp-ase.sub script and opt-ads.py script to submit our job. (Change to final line in vasp-ase.sub to read python opt-ads.py and then submit through sbatch vasp-ase.sub). The resulting energy of this calculation is the E<sub>surface + EC*</sub> in the equation at the top of the page. You should already know E<sub>surface</sub> from your previous calculation and use E<sub>EC</sub> provided to get the adsorption energy. 
+
+
+
+### Adsorption Sites ###
+
+Here are the adsorption sites that must be investigated for this project.
+
+
+
