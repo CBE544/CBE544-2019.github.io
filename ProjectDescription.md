@@ -86,7 +86,7 @@ Once you have substitued the metal dopant you can use the same relax.py script w
 Using these models from Task 1 we can now adsorb EC to the three locations (per system) shown below:
 
 <center><img src="../Images/Adsorptionlocations104.png" alt="window" style="width: 800px;"/><br>
-Locations for Dopants in LiCoO<sub>2</sub>
+Locations for Adsorption on the 104 surface of LiCoO<sub>2</sub>
 </center>
 
 Refer to the [Adsorption page](ASE/Adsorption) for instructions on how to add the EC adsorbate. 
@@ -165,6 +165,15 @@ This while write a new trajectory file called bader_charge.traj that has attache
 ### Task 4: ###
 
 Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. Use the sites clearly depicted below to see where to adosrb the EC. 
+
+<center><img src="../Images/Adsorptionlocations001-Coterm.png" alt="window" style="width: 800px;"/><br>
+Locations for Adsorption on the Cobalt Terminated 001 surface of LiCoO<sub>2</sub>
+</center>
+<center><img src="../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
+Locations for Adsorption on the Lithium Terminated 001 surface of LiCoO<sub>2</sub>
+</center>
+
+
 
 Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page. Look for trends between these systems, your own system, and even those of your classmates (if possible)
 
