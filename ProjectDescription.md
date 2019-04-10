@@ -32,7 +32,7 @@ Plan: Use DFT to study dopant effects on structure and changes it causes to EC a
 
 ### Motivation ###
 
-LiMO<sub>2</sub> (M= Co, Mn, Ni) materials are the most common cathode materials in batteries today. LiCoO2 is by far the most popular of those materials. A combination of effects has lead to investigations to improve the stability of LiCoO2 cathode materials or find suitable alternatives. Some problems include cost, reactivity, and structural problems that occur during cycling. Decomposition of the liquid electrolyte is a common cause of decreased battery performance. Ethylene carbonate is a popular component of the elctrolyte solution in Li ion batteries. In order to improve battery performance critical importance in improving battery operation is understanding the electrode – electrolyte interface. For high capacity battery materials, electrolytes decomposed causing the battery to decrease in performance. 
+LiMO<sub>2</sub> (M= Co, Mn, Ni) materials are the most common cathode materials in batteries today. LiCoO2 is by far the most popular of those materials. A combination of effects has lead to investigations to attempt to improve the stability of LiCoO2 cathode materials or find suitable alternatives. Some problems include cost, reactivity, and structural problems that occur during cycling. Decomposition of the liquid electrolyte is a common cause of decreased battery performance. Ethylene carbonate is a popular component of the elctrolyte solution in Li ion batteries. In order to improve battery performance critical importance in improving battery operation is understanding the electrode – electrolyte interface. For high capacity battery materials, electrolytes decomposed causing the battery to decrease in performance. 
 
 <center><img src="../Images/LiIonBatteries.png" alt="window" style="width: 800px;"/><br>
 Schematic of Li Ion Batteries
@@ -47,6 +47,7 @@ Ongoing work in the [Cabana Group](https://cabana.chem.uic.edu/) at UIC has show
 Nanocrystals from the Cabana Group
 </center>
 
+Using this information we plan a way to look at specific surface facets and the interactions of these facets with EC. The metals we will look at are Ni, Mg, an Ti. Data for non-doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2<sub> will provided for reference.
 
 <a name='calcs'></a>
 
@@ -121,7 +122,7 @@ This will write a file called `mag.traj` which will be openable in ase/3.9.1 and
 
 ### Task 1: ### 
 
-Once you have accurately completed HW5 you can continue on to the final project. We will use the 104 surface and 001 surface trajectories provided to you in the FinalProject directory (this is only because there are specific starting magnetic strcutrures that we want otherwise the structures that you made could easily be used) to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
+Once you have accurately completed HW5 you can continue on to the final project. We will use the 104 surface and 001 surface trajectories provided to you in the FinalProject directory (this is only because there are specific starting magnetic strcutrures that we want otherwise the structures that you made could be used) to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
 
 <center><img src="../Images/dopantlocations.png" alt="window" style="width: 800px;"/><br>
 Nanocrystals from the Cabana Group
