@@ -43,7 +43,7 @@ EC =read('EC.traj')
 add_adsorbate (p, h2o, height = 1, position = (3.429,22.484),mol_index=20)
 write('init.traj',p)
 ```
-Once we have change the adsorption location and adsorption mol index we can run this script by `python add_ads.py` and we should generate a new trajectory called init.traj. This is going to be out initial trajecotry for our DFT calculation and should like something like this:
+Once we have changed the adsorption location and adsorption mol index we can run this script by `python add_ads.py` and we should generate a new trajectory called init.traj. This is going to be out initial trajecotry for our DFT calculation and should like something like this:
 
 <center><img src="ECads.png" alt="window" style="width: 300px;"/>
 <img src="Ecads-side.png" alt="window" style="width: 300px;"/><br>
