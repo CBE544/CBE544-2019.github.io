@@ -47,7 +47,7 @@ Ongoing work in the [Cabana Group](https://cabana.chem.uic.edu/) at UIC has show
 Nanocrystals from the Cabana Group
 </center>
 
-Using this information we plan a way to look at specific surface facets and the interactions of these facets with EC. The metals we will look at are Ni, Mg, an Ti. Data for non-doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2</sub> will provided for reference.
+Using this information we plan a way to look at specific surface facets and the interactions of these facets with EC. The metals we will look at are Ni, Mg, an Ti. [Data for non-doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2</sub> will provided for reference.]((../CompData)
 
 <a name='calcs'></a>
 
