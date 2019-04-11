@@ -62,7 +62,6 @@ wget https://cbe544.github.io/CBE544-2019.github.io/FinalProject.tar.gz
 tar -zxvf FinalProject.tar.gz
 
 ```
-THESE FILES WILL BE UPLOADED BY THE END OF THE DAY ON 4/10. THE GITHUB PAGE WILL BE UPDATE AS SOON AS THESE FILES ARE AVAILABLE.
 
 In the FinalProject directory you should see some trajectory files and a directory called scripts which will be used for this project. In `FinalProject` directory create a `M-surf` and/or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)). For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
 
