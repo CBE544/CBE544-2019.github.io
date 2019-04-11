@@ -63,7 +63,7 @@ tar -zxvf FinalProject.tar.gz
 
 ```
 
-In the FinalProject directory you should see some trajectory files and a directory called scripts which will be used for this project. In `FinalProject` directory create a `M-surf` and/or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)). For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
+In the FinalProject directory you should see some trajectory files and a directory called scripts which contains the scripts you will need for this project. In `FinalProject` directory create a `M-surf` and/or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)). For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
 
 ```bash
 cd FinalProject
@@ -111,8 +111,10 @@ This is an outline of all of the DFT calculations you will need to do, how to or
 ~/CBE544/FinalProject/091/Literm/ads3/bader
 ```
 
+Not everyone will be running on calculations so you only need to have the directories of the calculations you will be running.
+
 #### A note on Magnetism ###
-These calculations are spin polarized and therefore the atoms contain non-zero magnetic moments. In order to view these magnetic moments, which are important for consistent calculations, you can open the final trajectory in ase-gui -> View -> Show Labels -> Magnetic Moments. The problem here is the the ase-gui for ase/3.13.0 does not do a good job with making the magnetic moments readable in the image BUT ase/3.9.1 does. This is further complicated by the fact that we cannot open trajecotry files made in ase/3.13.0 in ase/3.9.1 so we must convert the file format. We can do this using the switch.py script. Specifically, move into the direcotry where you wish to write the final trajectory to an ase/3.9.1 trajectory file and run these commands:
+These calculations are spin polarized and therefore the atoms contain non-zero magnetic moments. In order to view these magnetic moments, which are important for consistent calculations, you can open the final trajectory in ase-gui -> View -> Show Labels -> Magnetic Moments. The problem here is the the ase-gui for ase/3.13.0 does not do a good job with making the magnetic moments readable in the image BUT ase/3.9.1 does. This is further complicated by the fact that we cannot open trajecotry files made in ase/3.13.0 in ase/3.9.1 so we must convert from ase/3.13.0 to ase/3.9.1. We can do this using the switch.py script. Specifically, move into the direcotry where you wish to write the final trajectory to an ase/3.9.1 trajectory file and run these commands:
 
 ```bash
 module load ase/3.9.1
@@ -125,11 +127,10 @@ This will write a file called `mag.traj` which will be openable in ase/3.9.1 and
 Once you have accurately completed HW5 you can continue on to the final project. We will use the 104 surface and 001 surface trajectories provided to you in the FinalProject directory (this is only because there are specific starting magnetic strcutrures that we want otherwise the structures that you made could be used) to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
 
 <center><img src="../Images/dopantlocations.png" alt="window" style="width: 800px;"/><br>
-Nanocrystals from the Cabana Group
+104 Dopant Locations
 </center>
 
-
-Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script submit the job. Record the final energies which can be used to determine if the preferred dopant location is surface or subsurface.
+Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script and submit the job. Record the final energies which can be used to determine if the preferred dopant location is surface or subsurface.
 
 ### Task 2: ### 
 Using these models from Task 1 we can now adsorb EC to the three locations (per system) shown below:
@@ -138,7 +139,7 @@ Using these models from Task 1 we can now adsorb EC to the three locations (per 
 Locations for Adsorption on the 104 surface of LiCoO<sub>2</sub>
 </center>
 
-Refer to the [Adsorption page](../ASE/Adsorption) for instructions on how to add the EC adsorbate. We will use a different script than the relax.py for adsorption calculation. We will use the script called relax-ads.py which you can find in `FinalProject/scripts`. Please be sure to use this script for these calculations or you may expereince converngence issues. 
+Refer to the [Adsorption page](../ASE/Adsorption) for instructions on how to add the EC adsorbate. We will use a different script than the relax.py for adsorption DFT calculations. We will use the script called opt-ads.py which you can find in `FinalProject/scripts`. Please be sure to use this script for these calculations or you may expereince converngence issues. 
 
 ### Task 3: ### 
 
