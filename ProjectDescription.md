@@ -122,6 +122,16 @@ python ~/CBE544/FinalProject/switch.py
 ```
 This will write a file called `mag.traj` which will be openable in ase/3.9.1 and contain the structure and magnetic moments from your caclulation. When presenting structures please include the magnetic moments in your images. This script only works for final trajectories and not for bader charges files.
 
+#### Jobs Not Running on Chestnut ####
+
+As with the HW there are specific pairings of nodes that will not run calculations on chestnut. I have provided a script so that you can check to see if you jobs are running. 
+
+```bash
+sh ~/CBE544/FinalProject/mummyjobs.sh
+```
+
+Running this command will check on the jobs that are currently running to ensure that they are generating an output. If you run this script and no other lines are printed then your jobs are OK. If you get a results it means that you must cancel your job,exclude some nodes (this is explained in the HW5 page), and resubmit. 
+
 ### Task 1: ### 
 
 Once you have accurately completed HW5 you can continue on to the final project. We will use the 104 surface and 001 surface trajectories provided to you in the FinalProject directory (this is only because there are specific starting magnetic strcutrures that we want otherwise the structures that you made could be used) to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
