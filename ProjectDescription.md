@@ -58,7 +58,7 @@ To get started we need to get the files needed for the final project. Move into 
 ```bash
 cd
 cd CBE544
-wget XXXX
+wget https://cbe544.github.io/CBE544-2010.github.io/FinalProject.tar.gz
 tar -zxvf FinalProject.tar.gz
 
 ```
