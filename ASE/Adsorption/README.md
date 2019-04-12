@@ -22,7 +22,7 @@ $$
 
 </div>
 
-where EC* refers to adsorbed EC. We have *E*<sub>surface</sub> from the previous exercise (the total energy of the previous slab so we will need to calculate *E*<sub>surface + N*</sub>. The energy of E<sub>EC</sub> is -61.73764249 eV which comes from a calculation that was previously done.
+where EC* refers to adsorbed EC. We have *E*<sub>surface</sub> from the previous exercise (the total energy of the previous slab so we will need to calculate *E*<sub>surface + N*</sub>. The energy of E<sub>EC</sub> is -61.76873529 eV which comes from a calculation that was previously done. 
 
 <a name='adsorption-sites'></a>
 
