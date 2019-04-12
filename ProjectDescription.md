@@ -217,11 +217,11 @@ write('fin.traj',pend)
 ```
 This script does a static calculation (nsw=0) of the final trajectory from your previous relaxation and writes the files needed to do a bader charge anaylsis. Use the vasp-ase.sub script to submit the badercharge.py script (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you can attach the bader charge to each atom by typing
 
-```python
+```bash
 module load ase/3.9.1
 python ~/CBE544/FinalProject/bader_get_charge_vasp
 ```
-This while write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. It is important to load ase/3.9.1 so that the magnetic moments are readable.
+This will write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. It is important to load ase/3.9.1 so that the magnetic moments are readable.
 
 ### Task 4: ###
 
@@ -232,7 +232,7 @@ Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instea
 <center><img src="../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
 </center>
 
-Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page. Look for trends between these systems, your own system, and even those of your classmates (if possible)
+Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. [Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page]((/CompData). Look for trends between these systems, your own system, and even those of your classmates (if possible)
 
 <a name='deadlines'></a>
 
@@ -251,12 +251,13 @@ Do an detailed analysis of your system trying to identifty trends in adsorption 
 At a minimum you should accomplish the following:
 
 1. Complete the [HW5](../ASE/Getting_Started).
-2. Setup a LiCoO<sub>2</sub> surface (104) and calculate adsorption energies for EC adsorption as three sites for two different metal dopant locations (surface and sub-surface).
-3. Do a Bader Charge Analysis on metal doped system and metal doped system w/ EC and compare to the provided systems without and dopant and with an Al dopant.
+2. Setup a LiCoO<sub>2</sub> surface (104) and calculate adsorption energies for EC adsorption at three sites for two different metal dopant locations (surface and sub-surface).
+3. Do a Bader Charge Analysis on metal doped system and metal doped system w/ EC absorbed (8 total bader charge calculations) and compare to the provided systems without a dopant and with an Al dopant.
 4. Repeat this process on the 001 facet. Instead of doing is for surface and subsurface we will do this for Li-terminated and CoO<sub>2</sub> terminated. 
 5. Analysis
-    1. How does the metal dopant affect adsorption vs plain LiCoO<sub>2</sub>? vs Al-doped? How is the adosrption different for surface vs sub-surface?
-    2. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption?
+    1. Does the dopant have a strong preference for surface vs subsurface?
+    2. How does the metal dopant affect adsorption vs plain LiCoO<sub>2</sub>? vs Al-doped? How is the adosrption different for surface vs sub-surface? 
+    3. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption? Look at different site and different facet terminations.
 6. Report (3~5 pages maximum)
 
 
