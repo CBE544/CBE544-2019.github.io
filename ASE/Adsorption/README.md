@@ -50,6 +50,8 @@ Once we have changed the adsorption location and adsorption mol index we can run
   Example of LiCoO<sub>2</sub> with an EC adsorbed
 </center>
 
+Please check to be sure that the adosrbate is a reasonable height above the surface. If not please change the height parameter in the add_ads.py script and re-run.
+
 From here we can use our vasp-ase.sub script and opt-ads.py script to submit our job. (Change to final line in vasp-ase.sub to read python opt-ads.py and then submit through sbatch vasp-ase.sub). The resulting energy of this calculation is the E<sub>surface + EC*</sub> in the equation at the top of the page. You should already know E<sub>surface</sub> from your previous calculation and use E<sub>EC</sub> provided to get the adsorption energy. 
 
 
