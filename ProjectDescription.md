@@ -63,11 +63,13 @@ tar -zxvf FinalProject.tar.gz
 
 ```
 
-In the FinalProject directory you should see some trajectory files and a directory called scripts which contains the scripts you will need for this project. In `FinalProject` directory create a `M-surf` and/or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)). For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
+In the FinalProject directory you should see some trajectory files and a directory called scripts which contains the scripts you will need for this project. In `FinalProject` directory create driectory for the surface facet (104 or 001) and in that for the metal and locations you are runnig a `M-surf` and/or `M-subsurf` folder (M is the metal you are assigned, please check [Assignment](https://cbe544.github.io/Project_Assignments/)). For example, if you are assignemnt with Ni and you are running a surface calculation, please run the following command to create the directories: 
 
 ```bash
 cd FinalProject
-mkidr Ni-surf
+mkidr 104
+cd 104
+mkdir Ni-surf
 ```
 
 Organization for the project is very important so that the data is accesbile once the class is over. We will structure is to be something like this for the 104 surface
