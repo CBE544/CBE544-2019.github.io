@@ -77,7 +77,7 @@ Organization for the project is very important so that the data is accesbile onc
 ~/CBE544/FinalProject/104/M-surf/ads1/
 ~/CBE544/FinalProject/104/M-surf/ads2/
 ~/CBE544/FinalProject/104/M-surf/ads3/
-~/CBE544/FinalProject/104/M-surf/clean/bader
+~/CBE544/FinalProject/104/M-surf/noads/bader
 ~/CBE544/FinalProject/104/M-surf/ads1/bader
 ~/CBE544/FinalProject/104/M-surf/ads2/bader
 ~/CBE544/FinalProject/104/M-surf/ads3/bader
@@ -85,7 +85,7 @@ Organization for the project is very important so that the data is accesbile onc
 ~/CBE544/FinalProject/104/M-sub/ads1/
 ~/CBE544/FinalProject/104/M-sub/ads2/
 ~/CBE544/FinalProject/104/M-sub/ads3/
-~/CBE544/FinalProject/104/M-sub/clean/bader
+~/CBE544/FinalProject/104/M-sub/noads/bader
 ~/CBE544/FinalProject/104/M-sub/ads1/bader
 ~/CBE544/FinalProject/104/M-sub/ads2/bader
 ~/CBE544/FinalProject/104/M-sub/ads3/bader
@@ -97,18 +97,18 @@ This is an outline of all of the DFT calculations you will need to do, how to or
 ~/CBE544/FinalProject/001/CoTerm/ads1/
 ~/CBE544/FinalProject/001/CoTerm/ads2/
 ~/CBE544/FinalProject/001/CoTerm/ads3/
-~/CBE544/FinalProject/001/CoTerm/clean/bader
+~/CBE544/FinalProject/001/CoTerm/noads/bader
 ~/CBE544/FinalProject/001/CoTerm/ads1/bader
 ~/CBE544/FinalProject/001/CoTerm/ads2/bader
 ~/CBE544/FinalProject/001/CoTerm/ads3/bader
 ~/CBE544/FinalProject/001/Literm/noads/
 ~/CBE544/FinalProject/001/Literm/ads1/
-~/CBE544/FinalProject/001/Literm//ads2/
+~/CBE544/FinalProject/001/Literm/ads2/
 ~/CBE544/FinalProject/001/Literm/ads3/
 ~/CBE544/FinalProject/001/Literm/noads/bader
 ~/CBE544/FinalProject/001/Literm/ads1/bader
 ~/CBE544/FinalProject/001/Literm/ads2/bader
-~/CBE544/FinalProject/091/Literm/ads3/bader
+~/CBE544/FinalProject/001/Literm/ads3/bader
 ```
 
 Not everyone will be running on calculations so you only need to have the directories of the calculations you will be running.
