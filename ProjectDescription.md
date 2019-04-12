@@ -140,7 +140,7 @@ Once you have accurately completed HW5 you can continue on to the final project.
 104 Dopant Locations
 </center>
 
-Once you have substitued the metal dopant you can use the same relax.py script we used for HW5 to relax this system. Copy over the script and submit the job. Record the final energies which can be used to determine if the preferred dopant location is surface or subsurface.
+Once you have substitued the metal dopant you can use the relax.py script in ~/CBE544/FinalProject/scripts to relax this system. Copy over the script and submit the job. Record the final energies which can be used to determine if the preferred dopant location is surface or subsurface.
 
 ### Task 2: ### 
 Using these models from Task 1 we can now adsorb EC to the three locations (per system) shown below:
