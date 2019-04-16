@@ -3,10 +3,10 @@ layout: page
 mathjax: false 
 permalink: /CompData/
 ---
-
+<center>
 ## LiCoO<sub>2</sub> Data ##
 
-<center><img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
 
 ### Bader Charges ###
   
@@ -25,13 +25,9 @@ permalink: /CompData/
 <img src="../Images/LiCoO2Liadsbader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/LiCoO2Liadsbader2.png" alt="window" style="width: 400px;"/><br>
 
-</center>
-
-
 ## Al doped-LiCoO<sub>2</sub> Data ##
 
-<center><img src="../Images/AlLiCoO2data.png" alt="window" style="width: 400px;"/><br>
-</center>
+<img src="../Images/AlLiCoO2data.png" alt="window" style="width: 400px;"/><br>
 
 ### Surface Al Bader ###
 
@@ -42,18 +38,14 @@ permalink: /CompData/
 
 #### EC Adsorbate Bader #####
 
-<center><img src="../Images/AlsurfLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/AlsurfLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
-</center>
+<img src="../Images/AlsurfLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 
-<center><img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
-</center>
+<img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
 
-<center><img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
-</center>
-
+<img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 
 ### Subsurface Al Bader ###
 
@@ -64,14 +56,14 @@ permalink: /CompData/
 
 #### EC Adsorbate Bader #####
 
-<center><img src="../Images/AlsubLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/AlsubLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
-</center>
+<img src="../Images/AlsubLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 
-<center><img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
-</center>
 
-<center><img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+
+
+<img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 </center>
