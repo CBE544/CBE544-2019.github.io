@@ -60,10 +60,10 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 <img src="../Images/AlsurfLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsurfLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 
-<img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2s2bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
 
-<img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2s3bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 </center>
 
@@ -80,10 +80,10 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 <img src="../Images/AlsubLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 
 
-<img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2s2bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
 
 
-<img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2s3bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 </center>
