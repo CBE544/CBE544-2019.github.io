@@ -5,7 +5,7 @@ permalink: /CompData/
 ---
 <center>
   
-## LiCoO<sub>2</sub> Data ##
+## LiCoO<sub>2</sub> Data 
 
 <img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
 
