@@ -6,12 +6,9 @@ permalink: /CompData/
 
 ## LiCoO<sub>2</sub> Data ##
 
-
 <center><img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
-</center>
-## Bader Charges ##
 
-<center>
+### Bader Charges ###
   
 #### No adsorbate Bader ####
 
@@ -31,7 +28,6 @@ permalink: /CompData/
 </center>
 
 
-
 ## Al doped-LiCoO<sub>2</sub> Data ##
 
 <center><img src="../Images/AlLiCoO2data.png" alt="window" style="width: 400px;"/><br>
@@ -41,23 +37,41 @@ permalink: /CompData/
 
 #### No adsorbate Bader ####
 
-<img src="../Images/LiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
-<img src="../Images/LiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
 
+#### EC Adsorbate Bader #####
 
-
-
-<center><img src="../Images/LiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/LiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsurfLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsurfLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 </center>
 
-<center><img src="../Images/LiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/LiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsurfLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
 </center>
 
-<center><img src="../Images/AlLiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
-<center><img src="../Images/AlLiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 </center>
 
 
 ### Subsurface Al Bader ###
+
+#### No adsorbate Bader ####
+
+<img src="../Images/AlsubLiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
+
+#### EC Adsorbate Bader #####
+
+<center><img src="../Images/AlsubLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsubLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
+</center>
+
+<center><img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+</center>
+
+<center><img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<center><img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+</center>
