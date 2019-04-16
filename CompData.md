@@ -4,8 +4,11 @@ mathjax: false
 permalink: /CompData/
 ---
 
+# Data to compare with #
+
+Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2</sub> and compare your results to this. Look at both bader charge and adsorption energy trends. See if you can identify and similarities or difference with your dopant information to this data.
   
-## LiCoO<sub>2</sub> Data  ##
+## LiCoO<sub>2</sub> Data 
 
 <img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
 
