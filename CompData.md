@@ -4,10 +4,26 @@ mathjax: false
 permalink: /CompData/
 ---
 
-| 104-EC ADS w/ Al |        |              |        | 
-|------------------|--------|--------------|--------| 
-|                  |        | Al locations |        | 
-|                  |        | row1         | row2   | 
-| Ads Location     | Co1/Al | -0.535       | -0.440 | 
-|                  | Co     | -0.450       | -0.429 | 
-|                  | Li     | -0.574       | -0.574 | 
+## LiCoO<sub>2</sub> Data ##
+
+
+<center><img src="../Images/LiCoO2data.png" alt="window" style="width: 800px;"/><br>
+
+
+</center>
+
+
+## Al doped-LiCoO<sub>2</sub> Data ##
+
+
+
+<center>
+
+<img src="../Images/AlLiCoO2data.png" alt="window" style="width: 800px;"/><br>
+
+
+</center>
+
+
+
+
