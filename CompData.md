@@ -10,44 +10,53 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 
 
  
-<center>
-
 ## LiCoO<sub>2</sub> Data ## 
-</center>
-<img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
 
+<center>
+<img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
+</center>
+ 
 ### Bader Charges  ###
-  
+
+
 #### No adsorbate Bader  ####
 
+<center>
 <img src="../Images/LiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/LiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
+</center>
+
 
 #### EC Adsorbate Bader ####
 
 ##### Co Ads ##### 
-
+<center>
 <img src="../Images/LiCoO2Coadsbader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/LiCoO2Coadsbader2.png" alt="window" style="width: 400px;"/><br>
-
+</center>
+ 
 ##### Li Ads ##### 
 
+<center>
 <img src="../Images/LiCoO2Liadsbader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/LiCoO2Liadsbader2.png" alt="window" style="width: 400px;"/><br>
+</center>
 
 ## Al doped-LiCoO<sub>2</sub> Data  ##
-
+<center>
 <img src="../Images/AlLiCoO2data.png" alt="window" style="width: 400px;"/><br>
+</center>
 
 ### Surface Al Bader ###
 
 #### No adsorbate Bader  ####
-
+<center>
 <img src="../Images/AlsurfLiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsurfLiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
+</center>
 
 #### EC Adsorbate Bader ####
-
+<center>
 <img src="../Images/AlsurfLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsurfLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 
@@ -56,16 +65,17 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 
 <img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsurfLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+</center>
 
 ### Subsurface Al Bader ###
 
 #### No adsorbate Bader ####
-
+<center>
 <img src="../Images/AlsubLiCoO2bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsubLiCoO2bader2.png" alt="window" style="width: 400px;"/><br>
-
+</center>
 #### EC Adsorbate Bader ####
-
+<center>
 <img src="../Images/AlsubLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsubLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 
@@ -76,4 +86,4 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 
 <img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
-
+</center>
