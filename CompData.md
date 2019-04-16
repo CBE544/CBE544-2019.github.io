@@ -81,7 +81,7 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 
 
 <img src="../Images/AlsubLiCoO2ads2bader1.png" alt="window" style="width: 400px;"/><br>
-<img src="../Images/AlsubLiCoO2ads21bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2ads2bader2.png" alt="window" style="width: 400px;"/><br>
 
 
 <img src="../Images/AlsubLiCoO2ads3bader1.png" alt="window" style="width: 400px;"/><br>
