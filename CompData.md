@@ -76,14 +76,14 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 </center>
 #### EC Adsorbate Bader ####
 <center>
-<img src="../Images/AlsubLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
-<img src="../Images/AlsubLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoOads1bader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoOads1bader2.png" alt="window" style="width: 400px;"/><br>
 
 
-<img src="../Images/AlsubLiCoO2s2bader1.png" alt="window" style="width: 400px;"/><br>
-<img src="../Images/AlsubLiCoO2s2bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoOads2bader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2ads21bader2.png" alt="window" style="width: 400px;"/><br>
 
 
-<img src="../Images/AlsubLiCoO2s3bader1.png" alt="window" style="width: 400px;"/><br>
-<img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2ads3bader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsubLiCoO2ads3bader2.png" alt="window" style="width: 400px;"/><br>
 </center>
