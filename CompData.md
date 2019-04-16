@@ -4,6 +4,7 @@ mathjax: false
 permalink: /CompData/
 ---
 <center>
+  
 ## LiCoO<sub>2</sub> Data ##
 
 <img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
@@ -66,4 +67,5 @@ permalink: /CompData/
 
 <img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsubLiCoO2s3bader2.png" alt="window" style="width: 400px;"/><br>
+
 </center>
