@@ -5,4 +5,11 @@ permalink: /CompData/
 ---
 
 
-Data for LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2</sub> coming shortly...
+|                  |        |              |        | 
+|------------------|--------|--------------|--------| 
+| 104-EC ADS w/ Al |        |              |        | 
+|                  |        | Al locations |        | 
+|                  |        | row1         | row2   | 
+| Ads Location     | Co1/Al | -0.535       | -0.440 | 
+|                  | Co     | -0.450       | -0.429 | 
+|                  | Li     | -0.574       | -0.574 | 
