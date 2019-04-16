@@ -4,12 +4,12 @@ mathjax: false
 permalink: /CompData/
 ---
 
-## LiCoO<sub>2</sub> Data
+## LiCoO<sub>2</sub> Data ##
 
 
 <center><img src="../Images/LiCoO2data.png" alt="window" style="width: 400px;"/><br>
 </center>
-### Bader Charges ###
+## Bader Charges ##
 
 <center>
   
