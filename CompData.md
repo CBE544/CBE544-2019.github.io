@@ -57,7 +57,7 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 
 #### EC Adsorbate Bader ####
 <center>
-<img src="../Images/AlsurfLiCoO2s1Cobader1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlsurfLiCoO2s1bader1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/AlsurfLiCoO2s1bader2.png" alt="window" style="width: 400px;"/><br>
 
 <img src="../Images/AlsurfLiCoO2s2bader1.png" alt="window" style="width: 400px;"/><br>
