@@ -4,7 +4,9 @@ mathjax: false
 permalink: /MagStruct/
 ---
 
-## Magnetism ##
+# Magnetism and Structure 
+
+## Magnetism 
 
 ## How to Edit Magnetism ##
 
@@ -36,3 +38,8 @@ With an adsorbate we may see slight variations. Here is an example for Al doped 
 <img src="../Images/AlLiCoO2mag4.png" alt="window" style="width: 400px;"/><br>
 104 Al Doped Desired Magnetism
 </center>
+
+
+## Strucutre
+
+Coming Soon...
