@@ -243,10 +243,10 @@ cp /home/antcurto/for/CBE544/001-Litermwithads.traj ~/CBE544/FinalProject
 ```
 This will give you the trajectories with EC adsorbed. The location of where to substitute Co with your dopant can be seen below. 
 
-<center><img src="../Images/dopantlocations001Co.png" alt="window" style="width: 800px;"/><br>
+<center><img src="../Images/dopantlocation001Co.png" alt="window" style="width: 800px;"/><br>
 001 Co terminated Dopant Locations
 </center>
-<center><img src="../Images/dopantlocations001Li.png" alt="window" style="width: 800px;"/><br>
+<center><img src="../Images/dopantlocation001Li.png" alt="window" style="width: 800px;"/><br>
 001 Li terminated Dopant Locations
 </center>
 
