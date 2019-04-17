@@ -251,7 +251,7 @@ This will give you the trajectories with EC adsorbed. The location of where to s
 </center>
 
 
-Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. [Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page](/CompData). Look for trends between these systems, your own system, and even those of your classmates (if possible)
+Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. [Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page](../CompData). Look for trends between these systems, your own system, and even those of your classmates (if possible)
 
 <a name='deadlines'></a>
 
@@ -263,7 +263,7 @@ Run a bader charge analysis on this system as well. See if there are any clear t
 
 ## Analysis ##
 
-Do an detailed analysis of your system trying to identifty trends in adsorption due to dopant location, charge, surface, or anything else. Compare your data to that of plain LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2</sub> which can be found [here](/CompData).
+Do an detailed analysis of your system trying to identifty trends in adsorption due to dopant location, charge, surface, or anything else. Compare your data to that of plain LiCoO<sub>2</sub> and Al-doped LiCoO<sub>2</sub> which can be found [here](../CompData).
 
 ### Requirements ###
 
