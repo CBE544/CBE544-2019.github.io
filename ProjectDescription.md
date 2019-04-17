@@ -10,7 +10,7 @@ permalink: /Project/
 3. [Calculations](#calcs)
 4. [Analysis](#analysis)<br>
 	4a. [LiCoO<sub>2</sub> and Al-doped Data](../CompData)\
-	4b. [LiCoO<sub>2</sub> magnetism and strucutre](../StructandMag)
+	4b. [LiCoO<sub>2</sub> magnetism and strucutre](../MagStruct)
 5. [Final Report](#report)
 
 
