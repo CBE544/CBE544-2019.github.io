@@ -227,12 +227,23 @@ This will write a new trajectory file called bader_charge.traj that has attached
 
 ### Task 4: ###
 
-Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. Use the sites clearly depicted below to see where to adosrb the EC in relationship to the metal dopant. The metal dopant in this system should always go in the layer of Co on the surface or closest to it (it will be the layer right under the lithium for the lithium terminated case).
+Repeat both Task 1 and Task 2 for the 001 surface. The only difference is instead of surface and subsurface we will use Li-terminated vs CoO termianted. You can use the trajectories in the FinalProject directory to run the substituion calculations but we will be doing the adsorption calculations slightly different than the 104. 
 
-<center><img src="../Images/Adsorptionlocations001-Coterm.png" alt="window" style="width: 800px;"/><br>
+Since the calculation for 001 take a long time you will be provided with two trajectories with EC absorbed to the surface already. From here we will alter or dopant location to see the effect of the dopant location within proximity to the adsorbate. To get the trajectories (which are clean LiCoO<sub>2</sub>) type this:
+
+```bash
+cp /home/antcurto/for/CBE544/001-Cotermwithads.traj ~/CBE544/FinalProject  
+cp /home/antcurto/for/CBE544/001-Litermwithads.traj ~/CBE544/FinalProject
+```
+This will give you the trajectories with EC adsorbed. The location of where to substitute Co with your dopant can be seen below. 
+
+<center><img src="../Images/dopantlocations001Co.png" alt="window" style="width: 800px;"/><br>
+001 Co terminated Dopant Locations
 </center>
-<center><img src="../Images/Adsorptionlocations001-Literm.png" alt="window" style="width: 800px;"/><br>
+<center><img src="../Images/dopantlocations001Li.png" alt="window" style="width: 800px;"/><br>
+001 Li terminated Dopant Locations
 </center>
+
 
 Run a bader charge analysis on this system as well. See if there are any clear trends between the two systems through things such as dopant location, charge, etc. [Compare your system to the LiCoO<sub>2</sub> and the Al-doped system shown on this page]((/CompData). Look for trends between these systems, your own system, and even those of your classmates (if possible)
 
