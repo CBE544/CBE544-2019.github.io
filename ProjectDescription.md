@@ -135,6 +135,22 @@ sh ~/CBE544/FinalProject/mummyjobs.sh
 
 Running this command will check on the jobs that are currently running to ensure that they are generating an output. If you run this script and no other lines are printed then your jobs are OK. If you get a results it means that you must cancel your job,exclude some nodes (this is explained in the HW5 page), and resubmit. 
 
+#### Jobs not reaching force convergence ####
+
+Some jobs have been running on chestnut and have not reached the force convergence. This means we must extend the job and continue the calculation. I have written a script that will automatically extend the calculation you will just need to copy this by doing :
+
+```bash
+cp /home/antcurto/for/CBE544/extend.sh ~/CBE544/FinalProject/scripts
+```
+If you have a job that ended with convergence you can uses this script by typing:
+
+```bash
+sh ~/CBE544/FinalProject/extend.sh
+```
+
+This will make a new directory, copy in some files and submit a new job to be run from where the previous calculation has left off. Please only use this if you need to  
+
+
 ### Task 1: ### 
 
 Once you have accurately completed HW5 you can continue on to the final project. We will use the 104 surface and 001 surface trajectories provided to you in the FinalProject directory (this is only because there are specific starting magnetic strcutrures that we want otherwise the structures that you made could be used) to place a metal dopant on the surface and subsurface (separately, so two total calculations). The locations are shown here as in a top view of the 104 surface. The simplest way to change an atom to the desired dopant is to use ase-gui, click on the atom to change, Edit (or ctrl+Y), and type in the element you want. Be sure to save this new trejactory because ase-gui does not automatically save any changes you make. 
