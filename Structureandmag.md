@@ -30,3 +30,9 @@ When you add an adsorbate there tends to be a large perturbation to the magnetis
 
 With an adsorbate we may see slight variations. Here is an example for Al doped LiCoO<sub>2</sub>. Here is an example of the magnetism with Al. You can see that there is a slight change when it is in row 1 and row2. These exact moments should be similar for Ti and Mg but Ni may have a different magnetic moment than 0. That being said these magnetic patterns are likely the minimums for the systems that you are running and should be what we aim for when rerunning the caclulations. 
 
+<center><img src="../Images/AlLiCoO2mag1.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlLiCoO2mag2.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlLiCoO2mag3.png" alt="window" style="width: 400px;"/><br>
+<img src="../Images/AlLiCoO2mag4.png" alt="window" style="width: 400px;"/><br>
+104 Al Doped Desired Magnetism
+</center>
