@@ -217,11 +217,17 @@ pe = pend.get_potential_energy()
 #print mag
 write('fin.traj',pend)
 ```
-This script does a static calculation (nsw=0) of the final trajectory from your previous relaxation and writes the files needed to do a bader charge anaylsis. Use the vasp-ase.sub script to submit the badercharge.py script (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you can attach the bader charge to each atom by typing
+This script does a static calculation (nsw=0) of the final trajectory from your previous relaxation and writes the files needed to do a bader charge anaylsis. Use the vasp-ase.sub script to submit the badercharge.py script (`sbatch vasp-ase.sub` with the final line `python badercharge.py`). Once the job has finished you will need an updated bader_get_charge_vasp script. To do this do:
+
+```bash
+cp /home/antcurto/for/CBE544/bader_get_charge_vasp ~/CBE544/FinalProject/scripts
+```
+
+Next you can attach the bader charge to each atom by typing
 
 ```bash
 module load ase/3.9.1
-python ~/CBE544/FinalProject/bader_get_charge_vasp
+python ~/CBE544/FinalProject/scripts/bader_get_charge_vasp
 ```
 This will write a new trajectory file called bader_charge.traj that has attached the bader charge of each atom as a magnetic moment. To see this use ase-gui -> View -> Show Labels -> Magnetic Moments. Analyze how the bader charges differ from each system. It is important to load ase/3.9.1 so that the magnetic moments are readable.
 
