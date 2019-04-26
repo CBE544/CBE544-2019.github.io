@@ -17,7 +17,9 @@ Please look at this data for non doped LiCoO<sub>2</sub> and Al-doped LiCoO<sub>
 </center>
  
 ### Bader Charges  ###
-
+<center>
+<img src="../Images/ECbader.png" alt="window" style="width: 400px;"/><br>
+</center>
 
 #### No adsorbate Bader  ####
 
