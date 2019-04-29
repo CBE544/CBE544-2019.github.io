@@ -42,10 +42,14 @@ With an adsorbate we may see slight variations. Here is an example for Al doped 
 
 ## Strucutre
 
-### Examples of Structural Changes ##
+### Examples of Structural Changes to look for ##
 
+#### LiCoO<sub>2</sub> without Al #### 
 <img src="../Images/strucuture1.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/strucuture2.png" alt="window" style="width: 400px;"/><br>
+
+#### LiCoO<sub>2</sub> with Al #### 
+
 <img src="../Images/strucuture3.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/strucuture4.png" alt="window" style="width: 400px;"/><br>
 <img src="../Images/strucuture5.png" alt="window" style="width: 400px;"/><br>
