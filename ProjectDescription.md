@@ -298,7 +298,7 @@ At a minimum you should accomplish the following:
 
 ### Presentation ##
 
-The Final Presentation should include a summary of all of the calculations you were able to complete. Present the strucutres (with magnetic moments shown please), adsorption energies, and bader charges. You will present that data and an analysis of this data compared to the provided LiCoO<sub>2</sub> and the Al-doped LiCoO<sub>2</sub> data. Also take note of ay major strucutral changes induced by the dopants. Use the structure images shown [here](../StructMag) and the 104-LiCoO2.traj file provided to you for some geometric anaylsis.
+The Final Presentation should include a summary of all of the calculations you were able to complete. Present the strucutres (with magnetic moments shown please), adsorption energies, and bader charges. You will present that data and an analysis of this data compared to the provided LiCoO<sub>2</sub> and the Al-doped LiCoO<sub>2</sub> data. Also take note of ay major strucutral changes induced by the dopants. Use the structure and magnetism images shown [here](../MagStruct), the 104-LiCoO2.traj and 001-Literm.traj, and the data [here](../CompData) provided to you for some geometric anaylsis.
 
 Discuss problems you had with convergence, magnetism, or any other problems that you encounctered. 
 
