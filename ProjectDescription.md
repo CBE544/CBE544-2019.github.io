@@ -296,6 +296,17 @@ At a minimum you should accomplish the following:
     3. Do you notice and trends from the bader charge analysis that may contribute to the change in adsorption? Look at different site and different facet terminations.
 6. Report (3~5 pages maximum)
 
+### Presentation ##
+
+The Final Presentation should include a summary of all of the calculations you were able to complete. Present the strucutres (with magnetic moments shown please), adsorption energies, and bader charges. You will present that data and an analysis of this data compared to the provided LiCoO<sub>2</sub> and the Al-doped LiCoO<sub>2</sub> data. Also take note of ay major strucutral changes induced by the dopants. Use the structure images shown [here](../StructMag) and the 104-LiCoO2.traj file provided to you for some geometric anaylsis.
+
+Discuss problems you had with convergence, magnetism, or any other problems that you encounctered. 
+
+Each Group will also be required to ask questions and begin a disucssion about another groups work. Here are those assignments:
+
+Ni group will ask Ti group questions.
+Ti group will ask Mg groups questions.
+Mg group will ask Ni groups questions.
 
 <a name='report'></a>
 ### Final Report ###
