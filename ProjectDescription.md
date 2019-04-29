@@ -304,9 +304,9 @@ Discuss problems you had with convergence, magnetism, or any other problems that
 
 Each Group will also be required to ask questions and begin a disucssion about another groups work. Here are those assignments:
 
-Ni group will ask Ti group questions.
-Ti group will ask Mg groups questions.
-Mg group will ask Ni groups questions.
+Ni group will ask Ti group questions.</br>
+Ti group will ask Mg group questions.</br>
+Mg group will ask Ni group questions.
 
 <a name='report'></a>
 ### Final Report ###
